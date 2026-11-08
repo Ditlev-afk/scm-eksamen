@@ -1,0 +1,88 @@
+import type { ThemePrimer } from './types';
+
+export const primers: Record<number, ThemePrimer> = {
+  1: {
+    why: "Strategic fit er fundamentet for næsten alle senere temaer: hvis SC ikke matcher kundebehov, bliver inventory, transport og netværk forkerte uanset formler.",
+    bigPicture: "Competitive strategy siger hvad kunden vil have. Supply chain strategy siger hvordan operations/distribution/service leverer det på spektret effektiv↔responsiv. Fit = de to hænger sammen via implied demand uncertainty (IDU).",
+    mustKnow: ["CS først (kundebehov), derefter SC på E↔R — men de skal koordineres, ikke 'SC til sidst'.", "Demand uncertainty ≠ implied demand uncertainty. IDU stiger med kortere LT, højere CSL, flere varianter, innovation, customization.", "Fig 2-5: høj IDU kræver høj responsiveness. Under zonen = stockouts; over zonen = for dyrt.", "Fig 2-6: samme totale IU kan fordeles forskelligt mellem retailer/manufacturer/supplier.", "Dell-eksemplet: fit er dynamisk — markedsskift kræver SC-skift (BTO/høj R → mere effektiv/BTS).", "Mål: maksimér supply chain surplus (kundeværdi til lavest mulige samlede omkostning)."],
+    commonMistakes: ["At sige 'responsiv er altid bedst'.", "At blande demand uncertainty og IDU sammen.", "At glemme mismatch-konsekvenserne (under/over zonen).", "At tro Fig 2-6 betyder forskellige totale IU — det er allokering af samme IU."],
+    examStory: "Start med: kundebehov → IDU → nødvendig R → zone of fit. Vis så at usikkerhed kan lægges forskellige steder i kæden. Luk med Dell: fit ændrer sig.",
+  },
+  2: {
+    why: "Drivers er de håndtag du drejer for at lande på den E/R-position strategic fit kræver — og DuPont viser hvordan SC-beslutninger rammer ROA.",
+    bigPicture: "Fig 3-1: CS → SC strategy → structure → 6 drivers + metrics. Logistiske: facilities, inventory, transportation. Cross-functional: information, sourcing, pricing. ROA = margin × asset turnover.",
+    mustKnow: ["Hver driver kan designes mere effektiv eller mere responsiv.", "Facilities: få/store = E; mange/tæt på kunde = R.", "Inventory: lavt/central = E; højt ss tæt på kunde = R.", "Transport: billig/langsom = E; hurtig/fleksibel = R.", "Kina-fabrik: assets↑ (turnover↓) men COGS/transport kan forbedre margin — ROA afhænger af nettot.", "Fordoblet safety stock: assets↑ + holding cost; sales kan↑ via færre stockouts — kort sigt ofte ROA↓."],
+    commonMistakes: ["At glemme cross-functional drivers.", "At sige Kina-fabrik 'altid' hæver/sænker ROA uden trade-off.", "At snakke ROA uden at nævne både margin og turnover."],
+    examStory: "Tegn Fig 3-1. List 6 drivers med ét E/R-eksempel. Gå til DuPont og gennemgå én case (Kina eller safety stock) komponent for komponent.",
+  },
+  3: {
+    why: "Distribution network oversætter fit til konkret flow fra producent til kunde — det er ofte det første 'design'-tema i dialogen.",
+    bigPicture: "Vælg struktur der maksimerer SC-surplus. Servicefaktorer (RT, variety, availability, experience, visibility, returnability, time-to-market) vs costs (inventory, transport, facilities, information).",
+    mustKnow: ["Manufacturer storage + direct shipping: lav inventory (aggregation), høj variety, lang RT, høj transport, svær retur — godt til high-value/usikker demand hvor kunden venter.", "Distributor storage + last-mile: kort RT, høj experience, højere inventory, dyr last-mile — godt til fast movers/høj tæthed.", "Flere faciliteter: RT↓, inventory↑ (mindre pooling), outbound↓ inbound↑, total transport ofte U-formet.", "Behøver ikke maksimere alle servicefaktorer (Amazon vs boghandel)."],
+    commonMistakes: ["At sige direct shipping altid er billigst.", "At glemme at inventory stiger med flere DC'er.", "At blande distribution network (ch.4) sammen med facility network design (ch.5)."],
+    examStory: "Definer surplus-målet → sammenlign to designs punkt for punkt → afslut med 'antal faciliteter'-trade-offs.",
+  },
+  4: {
+    why: "Network design er den globale/regionale facilitetsbeslutning: hvor, hvor store, hvem de servicerer — med after-tax profit.",
+    bigPicture: "Fire faser (Fig 5.2): strategi → regioner → potentielle sites → endeligt valg+kapacitet. Påvirkes af strategic, macroeconomic, competitive (m.fl.) faktorer. Modeller: Gravity, CPLM.",
+    mustKnow: ["Fase 1 output: grov arkitektur. Fase 2: regioner+antal/rolle. Fase 3: shortlist. Fase 4: konkrete sites/kapaciteter/allokering.", "CPLM: 0/1 åbn/luk + flows; min produktion+transport+fixed; kapacitet & demand constraints.", "Gravity: vægtet midtpunkt (x*,y*) — startpunkt, ikke fuld sandhed.", "Macro: løn, told, skat, valuta. Competitive: externalities/Hotelling.", "Mål: after-tax profit + ønsket responstid."],
+    commonMistakes: ["At blande fase 2 og fase 4.", "At tro CoG automatisk håndterer told/veje/kapacitet.", "At glemme after-tax / makroøkonomi."],
+    examStory: "Gennemgå 4 faser med outputs → vælg 3 faktorer → forklar én model (CPLM eller Gravity).",
+  },
+  5: {
+    why: "Location methods er de konkrete værktøjer i fase 4 / readings — censor elsker at høre metode + styrke/svaghed.",
+    bigPicture: "Break-even (få sites, cost fokus), factor rating (mange soft/hard faktorer), Center-of-Gravity (transport-midtpunkt). Faulkswagon bruger CoG til fabrikker.",
+    mustKnow: ["Break-even: TC=F+vQ; Q_BE; vælg lavest TC ved forventet Q. Under Q_BE typisk lav F; over typisk lav v.", "Factor rating: faktorer → vægte → scores → vægtet sum. Transparent men subjektiv.", "CoG: x*=ΣxV/ΣV, y*=ΣyV/ΣV. Eks A(60,120)=2000 B(30,90)=1000 → (50,110).", "CoG justeres bagefter for infra/grænser/kapacitet."],
+    commonMistakes: ["At bruge break-even når mange kvalitative faktorer er afgørende.", "At præsentere CoG som 'den endelige sandhed'.", "Regnefejl i vægtet gennemsnit."],
+    examStory: "Sig hvornår hvilken metode → gennemgå én fuldt (gerne break-even eller CoG med tal) → nævn styrke/svaghed.",
+  },
+  6: {
+    why: "Cycle inventory forklarer hvorfor vi har lager selv uden usikkerhed — EOS i ordrer/produktion/transport.",
+    bigPicture: "Cycle inventory=Q/2. EOQ Q*=√(2DS/hC) balancerer S og holding hC. Quantity discounts (all-unit vs marginal). Aggregation/joint ordering.",
+    mustKnow: ["Høj S → større Q; høj hC → mindre Q.", "S inkluderer indkøb, fixed transport, receiving, admin.", "hC: capital, plads, handling, obsolescence, forsikring.", "All-unit: hele ordren får lav pris over cutoff. Marginal: kun enheder over cutoff.", "Vælg Q med lavest total annual cost (order+hold+material) — ikke lavest enhedspris.", "11-4 joint ordering sænker effektiv S; 11-5 kapacitet begrænser aggregation."],
+    commonMistakes: ["At vælge største rabat blindt.", "At blande cycle inventory med safety inventory.", "At glemme material cost i discount-beslutningen."],
+    examStory: "Definér Q/2 → EOQ-intution → all-unit 4 steps → kort om aggregation.",
+  },
+  7: {
+    why: "Safety inventory er bufferen mod usikkerhed — kerne i service vs cost.",
+    bigPicture: "Tre spørgsmål: hvilken availability? hvor meget ss? hvordan sænke ss uden at skade service? ss=z·σ_L. Continuous vs periodic review. CSL vs fill rate vs order fill rate.",
+    mustKnow: ["CSL: P(ingen stockout i cyklus). Fill rate: % enheder. Order fill rate: % komplette ordrer.", "Continuous: ROP=DL+ss, typisk lavere ss. Periodic: dækker LT+review → mere ss.", "Højere CSL → højere z → mere ss.", "Sænk ss via kortere LT, bedre forecast, aggregation/pooling, info sharing.", "Relevant for standardvarer med løbende replenishment."],
+    commonMistakes: ["At blande CSL og fill rate.", "At sige periodic kræver mindre lager.", "At sænke ss uden at nævne hvordan usikkerhed/LT reduceres."],
+    examStory: "3 spørgsmål → metrics → continuous vs periodic → ss=z·σ_L med Ex 12-3-logik.",
+  },
+  8: {
+    why: "Product availability/newsvendor er one-shot sæsonbeslutningen — anden logik end løbende safety stock.",
+    bigPicture: "Co=c−s, Cu=p−c, CSL*=Cu/(Cu+Co), Q*=F⁻¹(CSL*). Salvage↑ → Co↓ → CSL*↑.",
+    mustKnow: ["Bruges til fashion/elektronik/sæson med én ordre.", "Eks: p=1000,c=600,s=300 → Cu=400,Co=300 → CSL*≈0,57.", "Marginalregel: bestil ekstra mens E[gevinst]>E[omkostning].", "Fill rate/order fill rate kan stadig beskrives, men beslutningen er newsvendor.", "Høj Cu (dyr understock) → højere optimal service."],
+    commonMistakes: ["At bruge z·σ_L-logik uden at skifte til Co/Cu.", "At bytte om på Co og Cu.", "At glemme at højere salvage hæver CSL*."],
+    examStory: "Sig 'sæson/one-shot' → definer Co/Cu med tal → CSL* → effekt af salvage.",
+  },
+  9: {
+    why: "Transport binder netværk sammen og trader direkte med inventory og response time.",
+    bigPicture: "Modes (TL/LTL), network options (direct, milk runs, …), Stepping Stone, Faulkswagon cost-struktur.",
+    mustKnow: ["Ex 14-1: høj demand → direct; lav demand → milk runs (inventory vinder).", "TL: fuld lastbil, lav cost/enhed. LTL: delt, dyrere, flere stops.", "Faulkswagon: Factory→DW TL; DW→CREP LTL ⇒ DW-placering kritisk.", "Stepping Stone: forbedr initial allokering via cyklusser til ingen negativ opportunity cost.", "Langsom transport ⇒ mere pipeline/safety inventory."],
+    commonMistakes: ["At sige milk runs altid er billigst.", "At glemme inventory-siden af transportvalg.", "At undervurdere LTL i Faulkswagon."],
+    examStory: "Trade-offs → Ex 14-1 regel → TL/LTL+Faulkswagon → kort Stepping Stone.",
+  },
+  10: {
+    why: "Coordination forklarer hvorfor lokale optima ødelægger SC-surplus — bullwhip er hovedhistorien.",
+    bigPicture: "Ukoordination → bullwhip → højere manufacturing/inventory/transport/labor costs. Levers: info sharing, VMI, CRP, align incentives; fjern obstacles (kampagner, lange LT, dårlig IT).",
+    mustKnow: ["Bullwhip: variation forstærkes upstream fordi led ser ordrer ikke POS.", "Info sharing: POS + fælles forecast + lager/kampagner.", "VMI: leverandør replenisher ud fra retail data.", "CRP: hyppig genopfyldning på faktisk salg.", "Mål: maksimér total surplus ikke lokal profit."],
+    commonMistakes: ["At beskrive bullwhip uden cost-konsekvenser.", "At blande VMI og CRP totalt sammen uden forskel.", "At glemme obstacles (pricing campaigns osv.)."],
+    examStory: "Definér coordination → bullwhip+costs → info sharing → VMI/CRP.",
+  },
+  11: {
+    why: "Sustainability/cirkulær SC er pensum + papers: retur som værdi, ikke kun affald.",
+    bigPicture: "5 RSC-processer; 7 deadly sins; revenue streams A/B/C; cradle-to-cradle; CopyMagic hierarchy.",
+    mustKnow: ["Processer: acquisition → reverse logistics → inspection → recovery → remarketing.", "Reverse logistics ofte mest usikker cost.", "Sins: bl.a. overser potential, ingen ejer/KPI, RL som 2. prioritet, kobler ikke cost/value.", "A cores, B recovered items, C virgin via service/brand augmentation.", "C2C: design til kredsløb uden værditab.", "CopyMagic: reman → cannibalize → recycle (+ repair)."],
+    commonMistakes: ["At snakke kun 'grønt' uden processer/revenue.", "At sætte recycle over remanufacture i value hierarchy.", "At glemme at RL skal ejes som proces."],
+    examStory: "Fra affald til værdi → 5 processer → sins eller revenue streams → CopyMagic/C2C.",
+  },
+  12: {
+    why: "Remanufacturing er den højeste recovery-option — forventes dybde ift. definitioner, hierarchy og profitbetingelser.",
+    bigPicture: "Repair ≠ reman ≠ recycle. Hierarchy maksimerer indlejret værdi. Kræver cores, inspektion, design, remarketing; brand risk.",
+    mustKnow: ["Reman: demontering/inspektion/udskiftning → nær as-new + garanti.", "Repair: specifik fejl. Recycle: materialeværdi.", "Cannibalize: komponent-organdonation.", "Profitabel når recovered value + revenue > cost to recover.", "Design for reman begrænses af specialisering; brand risk ved 3. parts 'reman'."],
+    commonMistakes: ["At kalde recycling for remanufacturing.", "At ignorere core acquisition-usikkerhed.", "At glemme brand/kvalitetsrisiko."],
+    examStory: "Definitioner → hierarchy (CopyMagic) → forudsætninger/risici → link til tema 11 revenue.",
+  },
+};

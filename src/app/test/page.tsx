@@ -17,10 +17,14 @@ export default function TestIndexPage() {
           Test dig selv
         </h1>
         <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
-          Hvert tema har multiple choice (pensum-check) og åbne spørgsmål, hvor
-          du skriver med egne ord og får en begrebsvurdering med det samme.
-          Spørgsmålene er krydstjekket mod Chopra & Meindl (6. udg.), dine noter
-          og lærerens Excel-vinkler.
+          Hvert tema har opfriskning, 12 flashcards, ca. 18 multiple choice og 6
+          åbne spørgsmål. Brug det som genopfriskning efter et års pause —
+          ikke kun som hurtig quiz.
+        </p>
+        <p className="mt-2 text-sm font-medium text-[hsl(var(--ink))]">
+          I alt: {themes.reduce((n, t) => n + getMcqsForTheme(t.id).length, 0)} MC
+          · {themes.reduce((n, t) => n + getOpenForTheme(t.id).length, 0)} åbne ·{" "}
+          {themes.length * 12} flashcards
         </p>
       </div>
 
@@ -35,14 +39,14 @@ export default function TestIndexPage() {
                   <div className="flex items-center justify-between">
                     <Badge variant="secondary">Tema {theme.id}</Badge>
                     <span className="text-xs text-muted-foreground">
-                      {mc} MC · {op} åbne
+                      {mc} MC · {op} åbne · 12 kort
                     </span>
                   </div>
                   <CardTitle className="font-display text-lg">
                     {theme.shortTitle}
                   </CardTitle>
                   <CardDescription>
-                    Start test → få score og feedback
+                    Opfrisk → flashcards → test
                   </CardDescription>
                 </CardHeader>
               </Card>

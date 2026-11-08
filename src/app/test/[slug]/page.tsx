@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getTheme, themes } from "@/data/themes";
 import { ThemeQuiz } from "@/components/exam/theme-quiz";
+import { ThemePrimer } from "@/components/exam/theme-primer";
+import { Flashcards } from "@/components/exam/flashcards";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -30,8 +32,8 @@ export default async function ThemeTestPage({
             {theme.shortTitle}
           </h1>
           <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
-            Skift mellem multiple choice og åbne svar. Åbne svar scores på
-            nøglebegreber — formulér gerne som til tavlen/dialogen.
+            Anbefalet rækkefølge når stoffet er rustent: opfriskning → flashcards
+            → MC (8/12/alle) → åbne svar med egne ord.
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
@@ -44,6 +46,8 @@ export default async function ThemeTestPage({
         </div>
       </div>
 
+      <ThemePrimer themeId={theme.id} />
+      <Flashcards themeId={theme.id} />
       <ThemeQuiz themeId={theme.id} themeTitle={theme.shortTitle} />
 
       <div className="flex flex-wrap gap-2">

@@ -5,6 +5,8 @@ import { A4Sheet } from "@/components/exam/a4-sheet";
 import { PracticeQuiz } from "@/components/exam/practice-quiz";
 import { PresentationTimer } from "@/components/exam/presentation-timer";
 import { ThemeQuiz } from "@/components/exam/theme-quiz";
+import { ThemePrimer } from "@/components/exam/theme-primer";
+import { Flashcards } from "@/components/exam/flashcards";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -61,6 +63,11 @@ export default async function ThemePage({
             ))}
           </ul>
         </div>
+      </div>
+
+      <div className="no-print space-y-6">
+        <ThemePrimer themeId={theme.id} />
+        <Flashcards themeId={theme.id} />
       </div>
 
       <A4Sheet theme={theme} />

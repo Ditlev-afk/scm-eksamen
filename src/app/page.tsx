@@ -29,8 +29,8 @@ export default function HomePage() {
             12 temaer. Ét A4-ark. Fem minutter ved tavlen.
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg">
-            Træn agenda, talk-track og dialogspørgsmål bygget direkte på dine noter,
-            lærerens print og de anbefalede 5-minutters vinkler.
+            Opfriskning, flashcards og stor spørgsmålsbank pr. tema — bygget til
+            genlæsning efter pause, ikke kun 5 hurtige MC-spørgsmål.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Button asChild size="lg" className="bg-[hsl(var(--coral))] hover:bg-[hsl(16_72%_42%)]">

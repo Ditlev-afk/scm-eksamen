@@ -13,6 +13,7 @@ import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
 type Mode = "mcq" | "open";
+type Size = 8 | 12 | "all";
 
 export function ThemeQuiz({
   themeId,
@@ -22,8 +23,24 @@ export function ThemeQuiz({
   themeTitle: string;
 }) {
   const [mode, setMode] = useState<Mode>("mcq");
-  const mcqList = useMemo(() => getMcqsForTheme(themeId), [themeId]);
-  const openList = useMemo(() => getOpenForTheme(themeId), [themeId]);
+  const [size, setSize] = useState<Size>(12);
+  const [seed, setSeed] = useState(0);
+
+  const allMcq = useMemo(() => getMcqsForTheme(themeId), [themeId]);
+  const allOpen = useMemo(() => getOpenForTheme(themeId), [themeId]);
+
+  const mcqList = useMemo(() => {
+    const shuffled = [...allMcq].sort(() => Math.random() - 0.5);
+    if (size === "all") return shuffled;
+    return shuffled.slice(0, size);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [allMcq, size, seed]);
+
+  const openList = useMemo(() => {
+    const shuffled = [...allOpen].sort(() => Math.random() - 0.5);
+    return shuffled;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [allOpen, seed]);
 
   return (
     <div className="space-y-4 rounded-xl border border-border bg-card p-5 shadow-sm">
@@ -33,31 +50,56 @@ export function ThemeQuiz({
             Test · {themeTitle}
           </p>
           <h3 className="font-display mt-1 text-xl text-[hsl(var(--ink))]">
-            Multiple choice & egne ord
+            {allMcq.length} MC · {allOpen.length} åbne i banken
           </h3>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Træn i bidder eller kør hele banken. Åbne svar = egne ord +
+            begrebsvurdering.
+          </p>
         </div>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           <Button
             size="sm"
             variant={mode === "mcq" ? "default" : "outline"}
             onClick={() => setMode("mcq")}
           >
-            Multiple choice ({mcqList.length})
+            Multiple choice
           </Button>
           <Button
             size="sm"
             variant={mode === "open" ? "default" : "outline"}
             onClick={() => setMode("open")}
           >
-            Egne ord ({openList.length})
+            Egne ord
           </Button>
         </div>
       </div>
 
       {mode === "mcq" ? (
-        <McqRunner questions={mcqList} />
+        <div className="flex flex-wrap gap-2">
+          {([8, 12, "all"] as Size[]).map((s) => (
+            <Button
+              key={String(s)}
+              size="sm"
+              variant={size === s ? "secondary" : "outline"}
+              onClick={() => {
+                setSize(s);
+                setSeed((x) => x + 1);
+              }}
+            >
+              {s === "all" ? `Alle ${allMcq.length}` : `${s} spørgsmål`}
+            </Button>
+          ))}
+          <Button size="sm" variant="ghost" onClick={() => setSeed((x) => x + 1)}>
+            Bland igen
+          </Button>
+        </div>
+      ) : null}
+
+      {mode === "mcq" ? (
+        <McqRunner key={`m-${seed}-${size}`} questions={mcqList} />
       ) : (
-        <OpenRunner questions={openList} />
+        <OpenRunner key={`o-${seed}`} questions={openList} />
       )}
     </div>
   );
@@ -67,6 +109,7 @@ function McqRunner({ questions }: { questions: Mcq[] }) {
   const [index, setIndex] = useState(0);
   const [picked, setPicked] = useState<number | null>(null);
   const [score, setScore] = useState({ right: 0, answered: 0 });
+  const [missed, setMissed] = useState<Mcq[]>([]);
   const [done, setDone] = useState(false);
 
   const q = questions[index];
@@ -77,27 +120,37 @@ function McqRunner({ questions }: { questions: Mcq[] }) {
   if (done) {
     const pct = Math.round((score.right / Math.max(score.answered, 1)) * 100);
     return (
-      <div className="rounded-lg bg-[hsl(199_40%_94%)] p-4">
+      <div className="space-y-4 rounded-lg bg-[hsl(199_40%_94%)] p-4">
         <p className="font-display text-2xl text-[hsl(var(--ink))]">
           Resultat: {score.right}/{score.answered} ({pct}%)
         </p>
-        <p className="mt-2 text-sm text-foreground/80">
-          {pct >= 80
-            ? "Stærkt — du rammer pensum-kernerne."
-            : pct >= 55
-              ? "OK — gå åbne spørgsmål igennem på de emner du missede."
-              : "Læs A4-arket igen, og kør testen én gang til."}
+        <p className="text-sm text-foreground/80">
+          {pct >= 85
+            ? "Stærkt — skift til åbne spørgsmål og sig det højt."
+            : pct >= 65
+              ? "OK — kør de missede begreber som flashcards, og prøv alle MC bagefter."
+              : "Rustent lag. Læs opfriskningen + flashcards, før du tester igen."}
         </p>
+        {missed.length > 0 ? (
+          <div>
+            <p className="text-xs font-bold uppercase tracking-wide">Missede emner</p>
+            <ul className="mt-2 space-y-1 text-sm">
+              {missed.slice(0, 8).map((m) => (
+                <li key={m.id}>· {m.question}</li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
         <Button
-          className="mt-4"
           onClick={() => {
             setIndex(0);
             setPicked(null);
             setScore({ right: 0, answered: 0 });
+            setMissed([]);
             setDone(false);
           }}
         >
-          Prøv igen
+          Prøv samme sæt igen
         </Button>
       </div>
     );
@@ -113,6 +166,12 @@ function McqRunner({ questions }: { questions: Mcq[] }) {
           Score {score.right}/{score.answered}
         </Badge>
       </div>
+      <div className="h-2 overflow-hidden rounded-full bg-secondary">
+        <div
+          className="h-full bg-[hsl(var(--sea))] transition-all"
+          style={{ width: `${(index / questions.length) * 100}%` }}
+        />
+      </div>
       <p className="font-display text-lg text-[hsl(var(--ink))]">{q.question}</p>
       <ul className="space-y-2">
         {q.options.map((opt, i) => {
@@ -120,16 +179,18 @@ function McqRunner({ questions }: { questions: Mcq[] }) {
           const isCorrect = i === q.correctIndex;
           const isPicked = picked === i;
           return (
-            <li key={opt}>
+            <li key={`${q.id}-${i}`}>
               <button
                 type="button"
                 disabled={picked !== null}
                 onClick={() => {
                   setPicked(i);
+                  const ok = i === q.correctIndex;
                   setScore((s) => ({
-                    right: s.right + (i === q.correctIndex ? 1 : 0),
+                    right: s.right + (ok ? 1 : 0),
                     answered: s.answered + 1,
                   }));
+                  if (!ok) setMissed((m) => [...m, q]);
                 }}
                 className={cn(
                   "w-full rounded-md border px-3 py-2.5 text-left text-sm transition",
@@ -197,9 +258,9 @@ function OpenRunner({ questions }: { questions: OpenQ[] }) {
           setText(e.target.value);
           setResult(null);
         }}
-        rows={7}
-        placeholder="Svar som til mundtlig eksamen — korte, præcise sætninger er fine."
-        className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm leading-relaxed outline-none ring-offset-background focus-visible:ring-2 focus-visible:ring-ring"
+        rows={8}
+        placeholder="Skriv som til mundtlig: korte sætninger, begreber, gerne et eksempel."
+        className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm leading-relaxed outline-none focus-visible:ring-2 focus-visible:ring-ring"
       />
       <div className="flex flex-wrap gap-2">
         <Button
@@ -222,21 +283,19 @@ function OpenRunner({ questions }: { questions: OpenQ[] }) {
 
       {result ? (
         <div className="space-y-3 rounded-lg border border-border bg-[hsl(42_30%_95%)] p-4">
-          <div className="flex flex-wrap items-center gap-2">
-            <Badge
-              className={
-                result.grade === "stærkt"
-                  ? "bg-emerald-700"
-                  : result.grade === "ok"
-                    ? "bg-[hsl(var(--sea))]"
-                    : result.grade === "tyndt"
-                      ? "bg-amber-600"
-                      : "bg-red-700"
-              }
-            >
-              {result.percent}% · {result.grade}
-            </Badge>
-          </div>
+          <Badge
+            className={
+              result.grade === "stærkt"
+                ? "bg-emerald-700"
+                : result.grade === "ok"
+                  ? "bg-[hsl(var(--sea))]"
+                  : result.grade === "tyndt"
+                    ? "bg-amber-600"
+                    : "bg-red-700"
+            }
+          >
+            {result.percent}% · {result.grade}
+          </Badge>
           <p className="text-sm">{result.feedback}</p>
           <div className="grid gap-3 sm:grid-cols-2">
             <div>
@@ -273,9 +332,8 @@ function OpenRunner({ questions }: { questions: OpenQ[] }) {
             </p>
           </details>
           <p className="text-xs text-muted-foreground">
-            Vurderingen matcher nøglebegreber (ikke stil). Du kan også indsætte
-            dit svar i chatten her, hvis du vil have en mundtlig-stil feedback
-            fra mig.
+            Appen scorer begreber. Paste gerne dit svar i chatten for mundtlig
+            feedback fra mig.
           </p>
         </div>
       ) : null}
