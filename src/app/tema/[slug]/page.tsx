@@ -6,6 +6,7 @@ import { PracticeQuiz } from "@/components/exam/practice-quiz";
 import { PresentationTimer } from "@/components/exam/presentation-timer";
 import { ThemeQuiz } from "@/components/exam/theme-quiz";
 import { ThemePrimer } from "@/components/exam/theme-primer";
+import { ThemeTheoryPanel } from "@/components/exam/theme-theory";
 import { Flashcards } from "@/components/exam/flashcards";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -67,7 +68,19 @@ export default async function ThemePage({
 
       <div className="no-print space-y-6">
         <ThemePrimer themeId={theme.id} />
+        <ThemeTheoryPanel themeId={theme.id} />
         <Flashcards themeId={theme.id} />
+        <div className="flex flex-wrap gap-2">
+          <Button asChild variant="outline" size="sm">
+            <Link href="/ordbog">Åbn ordbog</Link>
+          </Button>
+          <Button asChild variant="outline" size="sm">
+            <Link href="/sammenhaeng">Se sammenhænge</Link>
+          </Button>
+          <Button asChild variant="outline" size="sm">
+            <Link href={`/test/${theme.slug}`}>Test temaet</Link>
+          </Button>
+        </div>
       </div>
 
       <A4Sheet theme={theme} />

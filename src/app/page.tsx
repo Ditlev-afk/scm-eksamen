@@ -29,28 +29,28 @@ export default function HomePage() {
             12 temaer. Ét A4-ark. Fem minutter ved tavlen.
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg">
-            Opfriskning, flashcards og stor spørgsmålsbank pr. tema — bygget til
-            genlæsning efter pause, ikke kun 5 hurtige MC-spørgsmål.
+            Ordbog, grundteori, sammenhænge mellem temaerne, flashcards og stor
+            spørgsmålsbank — til genlæsning efter et års pause.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Button asChild size="lg" className="bg-[hsl(var(--coral))] hover:bg-[hsl(16_72%_42%)]">
+              <Link href="/ordbog">Fagbegrebsordbog</Link>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white"
+            >
+              <Link href="/sammenhaeng">Se sammenhænge</Link>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white"
+            >
               <Link href="/test">Test dig selv</Link>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white"
-            >
-              <Link href="/traek">Simulér træk</Link>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white"
-            >
-              <Link href="/print">Print alle A4</Link>
             </Button>
           </div>
         </div>

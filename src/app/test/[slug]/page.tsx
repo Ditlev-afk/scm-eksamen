@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getTheme, themes } from "@/data/themes";
 import { ThemeQuiz } from "@/components/exam/theme-quiz";
 import { ThemePrimer } from "@/components/exam/theme-primer";
+import { ThemeTheoryPanel } from "@/components/exam/theme-theory";
 import { Flashcards } from "@/components/exam/flashcards";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -47,6 +48,7 @@ export default async function ThemeTestPage({
       </div>
 
       <ThemePrimer themeId={theme.id} />
+      <ThemeTheoryPanel themeId={theme.id} />
       <Flashcards themeId={theme.id} />
       <ThemeQuiz themeId={theme.id} themeTitle={theme.shortTitle} />
 

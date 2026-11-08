@@ -5,6 +5,9 @@ Mundtlig reeksamen-hjælp til Supply Chain Management: 12 printbare A4-ark, agen
 ## Hvad appen gør
 
 - **12 temaer** med A4-ark klar til eksamen (agenda øverst → afskriv på tavlen i de 60 sekunder)
+- **Fagbegrebsordbog**: søgbar ordbog med definitioner, hvorfor det betyder noget, og link til temaer
+- **Teori pr. tema**: dybere grundbogstekst + koblinger til andre temaer
+- **Sammenhæng**: pensum-kort over hvordan de 12 temaer hænger sammen
 - **Opfriskning pr. tema**: big picture, must-know, typiske fejl, 5-min fortælling
 - **Flashcards**: 12 begrebskort pr. tema
 - **Test pr. tema**: ~18 multiple choice (8/12/alle) + 6 åbne spørgsmål med egne ord og begrebsvurdering
