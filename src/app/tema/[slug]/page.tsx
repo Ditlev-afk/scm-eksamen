@@ -4,6 +4,7 @@ import { getTheme, themes } from "@/data/themes";
 import { A4Sheet } from "@/components/exam/a4-sheet";
 import { PracticeQuiz } from "@/components/exam/practice-quiz";
 import { PresentationTimer } from "@/components/exam/presentation-timer";
+import { ThemeQuiz } from "@/components/exam/theme-quiz";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -66,7 +67,14 @@ export default async function ThemePage({
 
       <section className="no-print space-y-3">
         <h2 className="font-display text-2xl text-[hsl(var(--ink))]">
-          Dialogtræning
+          Test dette tema
+        </h2>
+        <ThemeQuiz themeId={theme.id} themeTitle={theme.shortTitle} />
+      </section>
+
+      <section className="no-print space-y-3">
+        <h2 className="font-display text-2xl text-[hsl(var(--ink))]">
+          Hurtig dialogtræning
         </h2>
         <p className="text-sm text-muted-foreground">
           Første spørgsmål er inden for temaet. Et par er bevidst fra andre temaer

@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { BookOpen, Printer, Timer, Shuffle } from "lucide-react";
+import { BookOpen, Printer, Timer, Shuffle, ListChecks } from "lucide-react";
 
 const links = [
   { href: "/", label: "Oversigt", icon: BookOpen },
+  { href: "/test", label: "Test", icon: ListChecks },
   { href: "/ov", label: "Øv dig", icon: Timer },
   { href: "/traek", label: "Træk tema", icon: Shuffle },
   { href: "/print", label: "Print A4", icon: Printer },

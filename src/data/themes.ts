@@ -482,9 +482,9 @@ export const themes: Theme[] = [
         formula: "Cycle inventory = Q / 2",
       },
       {
-        name: "EOQ (kerneidé)",
-        formula: "EOQ balancerer ordering cost og holding cost",
-        note: "Højere S → større Q. Højere h → mindre Q.",
+        name: "EOQ (Chopra 11.5)",
+        formula: "Q* = √(2DS / hC)",
+        note: "D = årlig demand, S = fixed order cost, h = holding cost rate, C = unit cost. Holding cost pr. enhed = hC. Højere S → større Q; højere hC → mindre Q.",
       },
     ],
     teacherAngles: [

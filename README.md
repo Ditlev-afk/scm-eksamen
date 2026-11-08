@@ -5,12 +5,13 @@ Mundtlig reeksamen-hjælp til Supply Chain Management: 12 printbare A4-ark, agen
 ## Hvad appen gør
 
 - **12 temaer** med A4-ark klar til eksamen (agenda øverst → afskriv på tavlen i de 60 sekunder)
+- **Test pr. tema**: multiple choice + åbne spørgsmål med egne ord og begrebsvurdering
 - **Træk tema** + timer (60 sek orientering → 5 min præsentation)
 - **Øvespørgsmål** inden for temaet og bevidst på tværs af curriculum
 - **Faulkswagon-case** som tværgående ark
 - **Print** af alle ark
 
-Indholdet er bygget ud fra dine noter, lærerens eksamensprint og Excel med anbefalede 5-minutters vinkler.
+Indholdet er krydstjekket mod Chopra & Meindl (6. udg.), dine noter, lærerens eksamensprint og Excel med 5-minutters vinkler. Remanufacturing/cirkulær SC trækker også på Thierry m.fl. / green SC-readings som i kurset.
 
 ## Kør lokalt
 
