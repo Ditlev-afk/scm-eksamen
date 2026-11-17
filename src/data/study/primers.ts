@@ -3,10 +3,10 @@ import type { ThemePrimer } from './types';
 export const primers: Record<number, ThemePrimer> = {
   1: {
     why: "Strategic fit er fundamentet for næsten alle senere temaer: hvis SC ikke matcher kundebehov, bliver inventory, transport og netværk forkerte uanset formler.",
-    bigPicture: "Competitive strategy siger hvad kunden vil have. Supply chain strategy siger hvordan operations/distribution/service leverer det på spektret effektiv↔responsiv. Fit = de to hænger sammen via implied demand uncertainty (IDU).",
-    mustKnow: ["CS først (kundebehov), derefter SC på E↔R — men de skal koordineres, ikke 'SC til sidst'.", "Demand uncertainty ≠ implied demand uncertainty. IDU stiger med kortere LT, højere CSL, flere varianter, innovation, customization.", "Fig 2-5: høj IDU kræver høj responsiveness. Under zonen = stockouts; over zonen = for dyrt.", "Fig 2-6: samme totale IU kan fordeles forskelligt mellem retailer/manufacturer/supplier.", "Dell-eksemplet: fit er dynamisk — markedsskift kræver SC-skift (BTO/høj R → mere effektiv/BTS).", "Mål: maksimér supply chain surplus (kundeværdi til lavest mulige samlede omkostning)."],
-    commonMistakes: ["At sige 'responsiv er altid bedst'.", "At blande demand uncertainty og IDU sammen.", "At glemme mismatch-konsekvenserne (under/over zonen).", "At tro Fig 2-6 betyder forskellige totale IU — det er allokering af samme IU."],
-    examStory: "Start med: kundebehov → IDU → nødvendig R → zone of fit. Vis så at usikkerhed kan lægges forskellige steder i kæden. Luk med Dell: fit ændrer sig.",
+    bigPicture: "Competitive strategy siger hvad kunden vil have. Supply chain strategy siger hvordan operations/distribution/service leverer det på spektret effektiv↔responsiv. Fit = de to hænger sammen via implied demand uncertainty (IDU). Fisher (1997): funktionelle produkter → efficient SC; innovative → responsive SC. Walmart-warm-up viser efficient distribution i praksis.",
+    mustKnow: ["CS først (kundebehov), derefter SC på E↔R — men de skal koordineres, ikke 'SC til sidst'.", "Demand uncertainty ≠ implied demand uncertainty. IDU stiger med kortere LT, højere CSL, flere varianter, innovation, customization.", "Fig 2-5: høj IDU kræver høj responsiveness. Under zonen = stockouts; over zonen = for dyrt.", "Fig 2-6: samme totale IU kan fordeles forskelligt mellem retailer/manufacturer/supplier.", "Fisher: match product type og SC-type — mismatch koster.", "Walmart-træk: inventory→information, standards, total cost-fokus, logistics tech, koordinering af usikker supply/demand.", "Dell-eksemplet: fit er dynamisk — markedsskift kræver SC-skift.", "Mål: maksimér supply chain surplus."],
+    commonMistakes: ["At sige 'responsiv er altid bedst'.", "At blande demand uncertainty og IDU sammen.", "At glemme mismatch-konsekvenserne (under/over zonen).", "At tro Fig 2-6 betyder forskellige totale IU — det er allokering af samme IU.", "At glemme Fisher/Walmart når underviseren eksplicit peger på dem."],
+    examStory: "Start med: kundebehov → IDU → nødvendig R → zone of fit. Bring Fisher ind. Vis allokering (2-6). Luk med Dell eller Walmart: fit i praksis.",
   },
   2: {
     why: "Drivers er de håndtag du drejer for at lande på den E/R-position strategic fit kræver — og DuPont viser hvordan SC-beslutninger rammer ROA.",
@@ -16,11 +16,11 @@ export const primers: Record<number, ThemePrimer> = {
     examStory: "Tegn Fig 3-1. List 6 drivers med ét E/R-eksempel. Gå til DuPont og gennemgå én case (Kina eller safety stock) komponent for komponent.",
   },
   3: {
-    why: "Distribution network oversætter fit til konkret flow fra producent til kunde — det er ofte det første 'design'-tema i dialogen.",
-    bigPicture: "Vælg struktur der maksimerer SC-surplus. Servicefaktorer (RT, variety, availability, experience, visibility, returnability, time-to-market) vs costs (inventory, transport, facilities, information).",
-    mustKnow: ["Manufacturer storage + direct shipping: lav inventory (aggregation), høj variety, lang RT, høj transport, svær retur — godt til high-value/usikker demand hvor kunden venter.", "Distributor storage + last-mile: kort RT, høj experience, højere inventory, dyr last-mile — godt til fast movers/høj tæthed.", "Flere faciliteter: RT↓, inventory↑ (mindre pooling), outbound↓ inbound↑, total transport ofte U-formet.", "Behøver ikke maksimere alle servicefaktorer (Amazon vs boghandel)."],
-    commonMistakes: ["At sige direct shipping altid er billigst.", "At glemme at inventory stiger med flere DC'er.", "At blande distribution network (ch.4) sammen med facility network design (ch.5)."],
-    examStory: "Definer surplus-målet → sammenlign to designs punkt for punkt → afslut med 'antal faciliteter'-trade-offs.",
+    why: "Distribution network oversætter fit til konkret flow fra producent til kunde — underviseren beder eksplicit om de seks arketyper.",
+    bigPicture: "Seks arketyper fra manufacturer storage/direct shipping til retail pick-up. Servicefaktorer vs costs. Aggregation upstream ↔ disaggregation downstream. 8. udgave er for tynd — brug 7. udgaves sider fra Learn.",
+    mustKnow: ["Kunne liste alle 6 arketyper; gå i dybden med én blandt #1–3 og én blandt #4–6.", "Direct shipping/dropshipping: lav inventory, høj variety, lang RT, høj transport.", "Distributor + last-mile: kort RT, dyr LTL/last-mile, højere inventory.", "Flere faciliteter: RT↓, inventory↑, outbound↓ inbound↑, transport ofte U-formet.", "TL mellem factory–DC; LTL typisk tættere på kunde."],
+    commonMistakes: ["At sige direct shipping altid er billigst.", "At glemme at inventory stiger med flere DC'er.", "At blande distribution network sammen med facility network design (CPLM/gravity).", "At ignorere at 8. udgave mangler arketype-detaljerne."],
+    examStory: "List de 6 → dyk ned i to på inventory/transport/RT/variety → kobl til fit → antal faciliteter.",
   },
   4: {
     why: "Network design er den globale/regionale facilitetsbeslutning: hvor, hvor store, hvem de servicerer — med after-tax profit.",
@@ -65,11 +65,11 @@ export const primers: Record<number, ThemePrimer> = {
     examStory: "Trade-offs → Ex 14-1 regel → TL/LTL+Faulkswagon → kort Stepping Stone.",
   },
   10: {
-    why: "Coordination forklarer hvorfor lokale optima ødelægger SC-surplus — bullwhip er hovedhistorien.",
-    bigPicture: "Ukoordination → bullwhip → højere manufacturing/inventory/transport/labor costs. Levers: info sharing, VMI, CRP, align incentives; fjern obstacles (kampagner, lange LT, dårlig IT).",
-    mustKnow: ["Bullwhip: variation forstærkes upstream fordi led ser ordrer ikke POS.", "Info sharing: POS + fælles forecast + lager/kampagner.", "VMI: leverandør replenisher ud fra retail data.", "CRP: hyppig genopfyldning på faktisk salg.", "Mål: maksimér total surplus ikke lokal profit."],
-    commonMistakes: ["At beskrive bullwhip uden cost-konsekvenser.", "At blande VMI og CRP totalt sammen uden forskel.", "At glemme obstacles (pricing campaigns osv.)."],
-    examStory: "Definér coordination → bullwhip+costs → info sharing → VMI/CRP.",
+    why: "Coordination forklarer hvorfor lokale optima ødelægger SC-surplus — bullwhip er hovedhistorien, og Beer Game gør den konkret.",
+    bigPicture: "Ukoordination → bullwhip → højere manufacturing/inventory/transport/labor costs. Levers: info sharing, VMI, CRP, align incentives; fjern obstacles. Beer Game: du mærker forsinkelser og ordre-forstærkning på egen krop.",
+    mustKnow: ["Bullwhip: variation forstærkes upstream fordi led ser ordrer ikke POS.", "Info sharing: POS + fælles forecast + lager/kampagner.", "VMI: leverandør replenisher ud fra retail data.", "CRP: hyppig genopfyldning på faktisk salg.", "Beer Game: brug jeres oplevelse til at konkretisere kapitlet.", "Mål: maksimér total surplus ikke lokal profit."],
+    commonMistakes: ["At beskrive bullwhip uden cost-konsekvenser.", "At blande VMI og CRP totalt sammen uden forskel.", "At glemme obstacles (pricing campaigns osv.).", "At snakke rent teoretisk uden Beer Game-kobling når I har spillet det."],
+    examStory: "Definér coordination → bullwhip+costs → ét Beer Game-øjeblik → info sharing/VMI/CRP.",
   },
   11: {
     why: "Sustainability/cirkulær SC er pensum + papers: retur som værdi, ikke kun affald.",
@@ -79,10 +79,10 @@ export const primers: Record<number, ThemePrimer> = {
     examStory: "Fra affald til værdi → 5 processer → sins eller revenue streams → CopyMagic/C2C.",
   },
   12: {
-    why: "Remanufacturing er den højeste recovery-option — forventes dybde ift. definitioner, hierarchy og profitbetingelser.",
-    bigPicture: "Repair ≠ reman ≠ recycle. Hierarchy maksimerer indlejret værdi. Kræver cores, inspektion, design, remarketing; brand risk.",
-    mustKnow: ["Reman: demontering/inspektion/udskiftning → nær as-new + garanti.", "Repair: specifik fejl. Recycle: materialeværdi.", "Cannibalize: komponent-organdonation.", "Profitabel når recovered value + revenue > cost to recover.", "Design for reman begrænses af specialisering; brand risk ved 3. parts 'reman'."],
-    commonMistakes: ["At kalde recycling for remanufacturing.", "At ignorere core acquisition-usikkerhed.", "At glemme brand/kvalitetsrisiko."],
-    examStory: "Definitioner → hierarchy (CopyMagic) → forudsætninger/risici → link til tema 11 revenue.",
+    why: "Remanufacturing er eksamenstema 12 — underviseren forventer teori PLUS din egen workshop (ikke de andres).",
+    bigPicture: "Reman = restore to original/better with QA. Steps: collect → inspect/clean → disassemble/restore → test. Workshop tracks: SC readiness, design barriers, circular value. Hierarchy: reman → cannibalize → recycle.",
+    mustKnow: ["Definition + 4 key steps.", "Repair ≠ reman ≠ recycle.", "De 3 workshop-tracks og hvilket du fulgte.", "Dit produkt: hvad I gjorde og 1–2 læringspunkter.", "Profitabel når recovered value + revenue > cost; ellers ned i hierarchy.", "Kobl til tema 11 (circular SC / revenue B+C)."],
+    commonMistakes: ["At kalde recycling for remanufacturing.", "At snakke generelt uden egen workshop.", "At glemme track/produkt/læring-strukturen underviseren anbefaler."],
+    examStory: "Hvad er reman? → circular kobling → mit produkt/track → hvad vi gjorde → hvad jeg lærte.",
   },
 };

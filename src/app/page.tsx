@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { themes, examFlow, faulkswagonCase } from "@/data/themes";
+import { courseMeta } from "@/data/study";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -23,14 +24,14 @@ export default function HomePage() {
         />
         <div className="relative max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[hsl(16_80%_72%)]">
-            Mundtlig reeksamen · Supply Chain Management
+            {courseMeta.code} · {courseMeta.term} · Mundtlig eksamen
           </p>
           <h1 className="font-display mt-3 text-4xl leading-[1.05] tracking-tight sm:text-5xl">
             12 temaer. Ét A4-ark. Fem minutter ved tavlen.
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg">
-            Ordbog, grundteori, sammenhænge mellem temaerne, flashcards og stor
-            spørgsmålsbank — til genlæsning efter et års pause.
+            Bygget efter underviserens vejledning: kapitler, 4xExplanation,
+            Faulkswagen A3 og workshop-spor — plus ordbog, teori og tests.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Button asChild size="lg" className="bg-[hsl(var(--coral))] hover:bg-[hsl(16_72%_42%)]">
@@ -135,15 +136,34 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="rounded-2xl border border-[hsl(var(--sea)/0.3)] bg-[hsl(199_40%_97%)] p-6 sm:p-8">
+        <Badge variant="secondary">Medbring til eksamen</Badge>
+        <h2 className="font-display mt-3 text-2xl text-[hsl(var(--ink))]">
+          A4 + Faulkswagen A3 + din workshop
+        </h2>
+        <ul className="mt-3 grid gap-2 sm:grid-cols-3">
+          {courseMeta.bringAlong.map((item) => (
+            <li
+              key={item}
+              className="rounded-md bg-white/80 px-3 py-2 text-sm leading-snug text-foreground/85"
+            >
+              {item}
+            </li>
+          ))}
+        </ul>
+        <p className="mt-3 text-sm text-muted-foreground">
+          {courseMeta.generalAdvice[0]}
+        </p>
+      </section>
+
       <section className="rounded-2xl border border-dashed border-[hsl(var(--coral))]/50 bg-[hsl(16_60%_96%)] p-6 sm:p-8">
         <Badge className="bg-[hsl(var(--coral))]">Tværgående case</Badge>
         <h2 className="font-display mt-3 text-2xl text-[hsl(var(--ink))]">
           {faulkswagonCase.title}
         </h2>
         <p className="mt-2 max-w-2xl text-sm text-foreground/80">
-          Lærerens Excel behandler Faulkswagon som eget tema/case. Brug den under
-          transport, location og network — og som forsikring hvis dialogen går
-          derhen.
+          Tag dit eget A3-kort med. Casen bruges især under location, network
+          design og transportation — og i dialogen på tværs af temaerne.
         </p>
         <ul className="mt-4 grid gap-2 sm:grid-cols-2">
           {faulkswagonCase.agenda.map((a) => (

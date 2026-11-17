@@ -2,7 +2,13 @@ import type { ThemeConnection, CurriculumStory } from './types';
 
 export const curriculumStory: CurriculumStory = {
   title: "Hvordan hele pensum hænger sammen",
-  paragraphs: ["Start med strategic fit (tema 1): hvad vil kunden have, og hvor usikkert er det for kæden (IDU)? Det bestemmer om SC skal være effektiv eller responsiv.", "Drivers & metrics (tema 2) er oversættelsen fra strategi til praksis — og DuPont viser hvordan valgene rammer ROA.", "Derefter bygges strukturen: distribution network (3) for flow til kunden, network design (4) og location (5) for hvor kapacitet skal stå.", "Drift og planlægning: cycle inventory (6) for EOS/batches, safety inventory (7) for usikkerhed, product availability/newsvendor (8) for one-shot sæson.", "Transportation (9) binder lokationer sammen og trader med lager/RT. Coordination (10) forklarer hvorfor lokal optimering (bullwhip) ødelægger surplus — og hvordan info/VMI/CRP retter det.", "Til sidst udvides systemgrænsen: sustainability/circular (11) og remanufacturing (12) tilføjer reverse flows, recovery hierarchy og nye revenue streams.", "Mundtligt tip: når dialogen går 'uden for tema', hop langs pilene ovenfor. Fx safety stock → info sharing; distribution → pooling; Faulkswagon → CoG + TL/LTL."],
+  paragraphs: [
+    "62133 Fall 2026 følger undervisningsplanen: start med strategic fit (tema 1) inkl. Fisher/Walmart, så drivers & DuPont (2).",
+    "Derefter netværk: 6 distributionsarketyper (3), kvantitative modeller/CPLM (4), lokaliseringsmetoder + Faulkswagen CoG (5).",
+    "Inventory-blokken har hver sit kapitel og 4xExplanation: cycle (6), safety (7), product availability/newsvendor (8).",
+    "Transportation (9) + modelling, coordination/Beer Game (10), sustainability/circular (11), og remanufacturing-workshop (12).",
+    "Mundtligt tip: hop langs pilene når dialogen går på tværs — og medbring A3-kortet fra Faulkswagen.",
+  ],
 };
 
 export const connections: ThemeConnection[] = [

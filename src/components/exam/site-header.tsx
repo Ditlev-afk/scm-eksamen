@@ -28,7 +28,7 @@ export function SiteHeader() {
             SCM Eksamen
           </span>
           <span className="hidden text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground sm:inline">
-            Reeksamen · 12 temaer
+            62133 · Fall 2026 · 12 temaer
           </span>
         </Link>
         <nav className="flex items-center gap-1 sm:gap-2">

@@ -1,22 +1,18 @@
-# SCM Eksamenstræner
+# SCM Eksamenstræner (62133 · Fall 2026)
 
-Mundtlig reeksamen-hjælp til Supply Chain Management: 12 printbare A4-ark, agendaer til tavlen, formler, lærerens 5-minutters vinkler og dialogtræning.
+Mundtlig eksamen-hjælp til DTU-kurset Supply Chain Management: 12 temaer med A4-ark, underviserens pensum-map, 4xExplanation-fokus, Faulkswagen A3 og remanufacturing-workshop.
 
 ## Hvad appen gør
 
-- **12 temaer** med A4-ark klar til eksamen (agenda øverst → afskriv på tavlen i de 60 sekunder)
-- **Fagbegrebsordbog**: søgbar ordbog med definitioner, hvorfor det betyder noget, og link til temaer
-- **Teori pr. tema**: dybere grundbogstekst + koblinger til andre temaer
-- **Sammenhæng**: pensum-kort over hvordan de 12 temaer hænger sammen
-- **Opfriskning pr. tema**: big picture, must-know, typiske fejl, 5-min fortælling
-- **Flashcards**: 12 begrebskort pr. tema
-- **Test pr. tema**: ~18 multiple choice (8/12/alle) + 6 åbne spørgsmål med egne ord og begrebsvurdering
-- **Træk tema** + timer (60 sek orientering → 5 min præsentation)
-- **Øvespørgsmål** inden for temaet og bevidst på tværs af curriculum
-- **Faulkswagon-case** som tværgående ark
+- **12 officielle eksamenstemaer** med A4-ark (agenda øverst til tavlen)
+- **Lærerens vejledning pr. tema**: kapitler, slides/DTU Learn-mapper, 4xExplanation, cases
+- **Fagbegrebsordbog**, dybere teori, flashcards og pensum-sammenhæng
+- **Tests**: multiple choice + åbne svar med begrebsvurdering
+- **Træk tema** + timer, dialogtræning på tværs af curriculum
+- **Faulkswagen-case** som tværgående ark (medbring dit A3)
 - **Print** af alle ark
 
-Indholdet er krydstjekket mod Chopra & Meindl (6. udg.), dine noter, lærerens eksamensprint og Excel med 5-minutters vinkler. Remanufacturing/cirkulær SC trækker også på Thierry m.fl. / green SC-readings som i kurset.
+Pensum følger Chopra (kursusplanen: 7. udgave; 6./8. også i omløb — tjek sidetal), Fisher (1997), Walmart warm-up, network design-øvelser, sustainability-papers og remanufacturing-workshop.
 
 ## Kør lokalt
 
@@ -27,15 +23,11 @@ npm run dev -- -p 4317
 
 Åbn [http://localhost:4317](http://localhost:4317).
 
-## Scripts
-
-- `npm run dev` — udviklingsserver
-- `npm run build` — production build
-- `npm start` — kør build
+Zip af hele projektet ligger også som `scm-eksamen.zip` i repo-roden.
 
 ## Tip til eksamen
 
-1. Print de 12 A4-ark (plus Faulkswagon hvis du vil).
-2. Lær agendaen udenad — de 60 sekunder er til at kopiere den til tavlen.
-3. Øv med **Træk tema** indtil rytmen sidder.
-4. Brug **Øv dig** til spørgsmål uden for dit favorittema.
+1. Print de 12 A4-ark og tag dit Faulkswagen A3-kort med.
+2. Arbejd 4xExplanation-øvelserne — de er eksamensrettede.
+3. Remanufacturing: øv din egen workshop (produkt → track → læring).
+4. Brug **Træk tema** indtil rytmen sidder.

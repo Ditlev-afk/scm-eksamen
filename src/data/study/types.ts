@@ -42,3 +42,13 @@ export type CurriculumStory = {
   title: string;
   paragraphs: string[];
 };
+
+export type ThemeMaterials = {
+  themeId: number;
+  summary: string;
+  textbook: string[];
+  slidesAndFolders: string[];
+  exercises: string[];
+  casesAndReadings: string[];
+  teacherTips: string[];
+};

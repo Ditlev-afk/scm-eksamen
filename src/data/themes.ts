@@ -19,11 +19,11 @@ export const themes: Theme[] = [
     shortTitle: "Strategic fit",
     agenda: [
       "1. Competitive vs supply chain strategy",
-      "2. Hvad er strategic fit?",
+      "2. Hvad er strategic fit? (+ Fisher)",
       "3. Implied demand uncertainty",
       "4. Fig. 2-5 Zone of strategic fit",
       "5. Fig. 2-6 Roller & allokering",
-      "6. Dell-eksempel (fit der skifter)",
+      "6. Walmart / Dell som fit-eksempler",
     ],
     talkTrack: [
       {
@@ -80,6 +80,8 @@ export const themes: Theme[] = [
     teacherAngles: [
       'Explain Figure 2-5 "Finding the Zone of Strategic Fit". Include Implied Uncertainty',
       'Explain Figure 2-6 "Different roles and Allocations…". Include Implied Uncertainty',
+      "Fisher (1997): right SC for functional vs innovative products",
+      "Walmart warm-up: inventory replaced by information / total cost focus",
     ],
     examAnswers: [
       {
@@ -89,6 +91,10 @@ export const themes: Theme[] = [
       {
         q: "Hvad sker der hvis man ligger uden for zonen af strategic fit?",
         a: "Under zonen: for træg til usikkert produkt → stockouts og tabt salg. Over zonen: for dyr/responsiv til stabilt produkt → unødvendige omkostninger og lavere profit.",
+      },
+      {
+        q: "Hvad siger Fisher (1997) kort?",
+        a: "Match supply chain til produkt: funktionelle produkter med forudsigelig efterspørgsel → efficient SC; innovative produkter med uforudsigelig efterspørgsel → responsive SC. Mismatch koster.",
       },
     ],
     crossLinks: [
@@ -193,28 +199,33 @@ export const themes: Theme[] = [
     title: "Distribution network design",
     shortTitle: "Distribution network",
     agenda: [
-      "1. Formål: maksimér SC-surplus",
+      "1. Formål + de 6 arketyper",
       "2. Servicefaktorer vs cost-drivere",
-      "3. Manufacturer storage + direct shipping",
-      "4. Distributor storage + last-mile",
-      "5. Valg af netværksoption",
+      "3. Arketype A (blandt #1–3) i dybden",
+      "4. Arketype B (blandt #4–6) i dybden",
+      "5. Valg ud fra fit (RT vs variety …)",
       "6. Antal faciliteter → RT, inventory, transport",
     ],
     talkTrack: [
       {
-        heading: "Formål",
+        heading: "Formål & seks arketyper",
         bullets: [
-          "Distribution = fragte + lagre fra producent til slutbruger.",
-          "Vælg netværk der maksimerer SC-surplus: kundebehov til lavest mulige samlede omkostning.",
-          "Trade-off mellem cost og responsiveness (strategic fit).",
+          "Distribution = fragte + lagre fra producent til slutbruger — maksimér SC-surplus.",
+          "1 Manufacturer storage + direct shipping (dropshipping)",
+          "2 Manufacturer storage + direct shipping + in-transit merge",
+          "3 Distributor storage + carrier delivery",
+          "4 Distributor storage + last-mile delivery",
+          "5 Manufacturer/distributor storage + customer pick-up",
+          "6 Retail storage + customer pick-up",
+          "8. udgave: kun ~1½ side — brug de uploadede ~16 sider fra 7. udgave på Learn.",
         ],
       },
       {
         heading: "Service vs cost",
         bullets: [
           "Service: response time, variety, availability, experience, order visibility, returnability, time-to-market.",
-          "Cost påvirkes af: inventories, transport, facilities, information.",
-          "Behøver ikke maksimere alle — Amazon: længere RT men højere udvalg end boghandel.",
+          "Cost: inventories, transport, facilities, information.",
+          "Aggregation (lager længere upstream) → mere TL, lavere inventory; disaggregation downstream → mere LTL, kortere RT.",
         ],
       },
       {
@@ -227,11 +238,11 @@ export const themes: Theme[] = [
         ],
       },
       {
-        heading: "Distributor storage + last-mile (fx nemlig.dk)",
+        heading: "Distributor storage + last-mile",
         bullets: [
           "Lokale lagre → distributør leverer last mile.",
           "Styrker: kort RT, høj experience (én levering), relativt god returnability.",
-          "Svagheder: højere inventory, dyr last-mile, flere facilities, lavere variety end hos producent.",
+          "Svagheder: højere inventory, dyr last-mile (LTL), flere facilities, lavere variety end hos producent.",
           "Bedst til: fast-moving varer, hastighed/convenience, høj kundetæthed.",
         ],
       },
@@ -246,6 +257,7 @@ export const themes: Theme[] = [
     ],
     formulas: [],
     teacherAngles: [
+      "De seks arketyper — vælg to og sammenlign på inventory, transport, RT, variety",
       "Forskelle: Manufacturer Storage with Direct Shipping vs Distributor storage with last-mile delivery",
       "Hvordan vælger man passende network design option?",
       "Hvordan påvirker antal faciliteter response time, inventory costs og transportation costs?",
@@ -872,57 +884,63 @@ export const themes: Theme[] = [
     title: "Remanufacturing",
     shortTitle: "Remanufacturing",
     agenda: [
-      "1. Remanufacturing vs repair/refurbish/recycle",
-      "2. Product recovery value hierarchy",
-      "3. CopyMagic som eksempel",
-      "4. Design for remanufacturing",
-      "5. Markeds- og brandrisici",
-      "6. Link til circular SC & revenue",
+      "1. Hvad er remanufacturing?",
+      "2. Kobling til circular SC",
+      "3. Workshop: mit produkt & track",
+      "4. Hvad gjorde vi?",
+      "5. Hvad lærte jeg?",
+      "6. Barriers / value / readiness",
     ],
     talkTrack: [
       {
         heading: "Hvad er remanufacturing?",
         bullets: [
-          "Brugt produkt skilles ad, inspiceres, kritiske dele udskiftes/opgraderes, og produktet bringes tilbage til (næsten) as-new stand med garanti.",
-          "Skeln: Repair = fikse specifik fejl. Refurbish = kosmetisk/funktionsopfriskning. Recycle = nedbrydes til materiale (lavest værdi).",
+          "Remanufacturing bringer et brugt produkt tilbage til original stand — eller bedre — med kvalitetstest og typisk garanti.",
+          "Key steps: 1) collection/takeback 2) inspection & cleaning 3) disassembly, replace/restore, reassembly 4) testing & QA.",
+          "Skeln: Repair = fikse fejl. Refurbish = opfriskning. Remanufacture = as-new. Recycle = materiale (lavest værdi).",
         ],
       },
       {
-        heading: "Value hierarchy (Thierry / CopyMagic)",
+        heading: "Kobling til circular SC",
         bullets: [
-          "Maksimér værdi i faldende orden: remanufacture → cannibalize (organdonation af komponenter) → recycle.",
-          "Repair-loop kører parallelt for garanti/defekte dele.",
-          "CopyMagic holder kopimaskiner i kredsløb længst muligt — cradle-to-cradle-logik i praksis.",
+          "Højest værdi først: remanufacture → cannibalize → recycle (+ repair-loop).",
+          "Kræver cores, design for disassembly, remarketing og at recovery skaber mere værdi end det koster.",
+          "Revenue: recovered items (B) + brand/service-augmentation (C).",
         ],
       },
       {
-        heading: "Forudsætninger & risici",
+        heading: "Workshop — tre tracks",
         bullets: [
-          "Kræver: stabil core acquisition, inspektionsevne, reservedelslager, remarketing-kanal.",
-          "Produktdesign afgør genbrugbarhed (standardisering vs specialisering).",
-          "Brand risk: 3. part sælger dårlig 'reman' med dit navn.",
-          "Profit er ikke one-size-fits-all — afhænger af design, kundeadfærd, segment og distributionsnet.",
+          "Track 1 Remanufacturing Potential: er virksomhed og SC klar? (circular supply-chain readiness, cores, aktører).",
+          "Track 2 Repairability & Design Barriers: hvad forhindrer repair/reman? (fejlende komponenter, destruktiv adskillelse).",
+          "Track 3 Circular Value Opportunities: hvor skabes værdi? (høj residual value + feasible recovery).",
+          "Underviseren forventer DIN workshop — ikke de andres.",
         ],
       },
       {
-        heading: "Eksamensbro til tema 11",
+        heading: "Eksamensstruktur (lærerens råd)",
         bullets: [
-          "Remanufacturing er den recovery-option med højest værdi i cirkulær SC.",
-          "Revenue: recovered items (gruppe B) + brand-/service-augmentation (gruppe C).",
-          "Hvis reman ikke kan betale sig: cannibalize/recycle — men forsøg altid højest værdi først.",
+          "1) Forklar remanufacturing kort og præcist.",
+          "2) Hvilket produkt arbejdede I med?",
+          "3) Hvad gjorde I (metoder, analyser, anbefalinger)?",
+          "4) Hvad lærte I om remanufacturing gennem arbejdet?",
         ],
       },
     ],
     formulas: [],
     teacherAngles: [
-      "CopyMagic circular supply chain / recovery hierarchy",
-      "Cradle-to-cradle vs remanufacturing i praksis",
+      "Forklar remanufacturing og kobl til circular supply chains",
+      "Inddrag jeres egen workshop: produkt, track, handling, læring",
       "Hvornår vælger man remanufacture frem for recycle?",
     ],
     examAnswers: [
       {
         q: "Hvordan adskiller remanufacturing sig fra recycling?",
         a: "Remanufacturing bevarer produktets form og det meste af den indlejrede værdi/arbejde og sælger det som as-new. Recycling ødelægger produktformen og beholder kun materiale-værdien — langt lavere recovery.",
+      },
+      {
+        q: "Hvad skal du inddrage fra workshoppen til eksamen?",
+        a: "Dit eget produkt/case, hvilket track I fulgte (readiness, design barriers eller value), hvad I konkret analyserede, og 1–2 læringspunkter om barriers eller værdiskabelse — ikke de andre gruppers workshops.",
       },
       {
         q: "Hvad skal være på plads for at remanufacturing er profitabelt?",
@@ -937,7 +955,7 @@ export const themes: Theme[] = [
 ];
 
 export const faulkswagonCase = {
-  title: "Faulkswagon-casen (tværgående)",
+  title: "Faulkswagen-casen (tværgående — medbring A3)",
   agenda: [
     "1. Case-setup: factories → DWs → CREPs",
     "2. Servicekrav 24h/48h",
@@ -984,26 +1002,27 @@ export const faulkswagonCase = {
 export const examFlow = [
   {
     step: "1. Træk tema",
-    detail: "Du trækker ét af 12 temaer — ikke et konkret spørgsmål.",
+    detail:
+      "Du trækker ét af 12 temaer — ingen færdige spørgsmål. Du vælger selv 5-minutters vinkel.",
   },
   {
-    step: "2. 60 sekunder",
+    step: "2. Medbring",
     detail:
-      "Orientér dig i dit A4-ark. Afskriv agendaen til venstre på tavlen. Vend papiret — No-Go bagefter.",
+      "Ét A4 pr. tema (én side) + dit eget Faulkswagen A3-kort. Remanufacturing: din workshop.",
   },
   {
     step: "3. 5 min præsentation",
     detail:
-      "Du vælger selv vinklen. Brug tavlen. Følg agendaen. Hold øje med tiden.",
+      "Du vælger selv vinklen. Brug tavlen og dit A4. Hold øje med tiden.",
   },
   {
     step: "4. Dialog",
     detail:
-      "Først spørgsmål til det du fortalte → så resten af temaet → til sidst andre temaer (fairness + bredde).",
+      "Spørgsmål til det du fortalte → resten af temaet → andre dele af curriculum.",
   },
   {
     step: "5. Votering",
-    detail: "Du går ud. Karakter + kort feedback. Alt inkl. ca. 20 min.",
+    detail: "Du går ud. Karakter + kort feedback.",
   },
 ];
 
