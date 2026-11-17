@@ -52,6 +52,16 @@ export default function HomePage() {
             >
               <Link href="/test">Test dig selv</Link>
             </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white"
+            >
+              <a href="/scm-eksamen.zip" download>
+                Download hele projektet (.zip)
+              </a>
+            </Button>
           </div>
         </div>
       </section>
