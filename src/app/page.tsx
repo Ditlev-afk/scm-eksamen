@@ -35,6 +35,14 @@ export default function HomePage() {
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Button asChild size="lg" className="bg-[hsl(var(--coral))] hover:bg-[hsl(16_72%_42%)]">
+              <Link href="/eksamen">Eksamensoverblik</Link>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white"
+            >
               <Link href="/ordbog">Fagbegrebsordbog</Link>
             </Button>
             <Button

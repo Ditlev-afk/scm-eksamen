@@ -1,0 +1,1424 @@
+[
+  {
+    "name": "62133 Introduction E2024",
+    "href": "/d2l/le/lessons/325173/topics/1266247",
+    "file": "originaler/1266247_62133_Introduction_E2024.pptx",
+    "sha256": "226d949b3a5aad557b15cf1904478b707f43f19110886bb5a602cd74182fa21f",
+    "bytes": 97891,
+    "format": ".pptx",
+    "slides": 7,
+    "text_chars": 1178,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266247"
+  },
+  {
+    "name": "62133 - Semester Plan - Fall 2026",
+    "href": "/d2l/le/lessons/325173/topics/1266324",
+    "file": "originaler/1266324_62133_-_Semester_Plan_-_Fall_2026.xls",
+    "sha256": "1d50367628324c11ef4fb233b22f6c31c49614721893158903ad113907ae1498",
+    "bytes": 33792,
+    "format": ".xls",
+    "sheets": [
+      "Ark1",
+      "Ark2",
+      "Ark3"
+    ],
+    "text_chars": 2761,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266324"
+  },
+  {
+    "name": "12 temaer plus ting i kan vælge at komme ind på i jeres 5 min",
+    "href": "/d2l/le/lessons/325173/topics/1266253",
+    "file": "originaler/1266253_12_temaer_plus_ting_i_kan_vælge_at_komme_ind_på_i_jeres_5_min.xlsx",
+    "sha256": "5889cc963cce05b72266ce9d6e7b5aedb26a50b6809c0618fdadf719d16a201c",
+    "bytes": 11237,
+    "format": ".xlsx",
+    "sheets": [
+      "Sheet2"
+    ],
+    "text_chars": 3940,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266253"
+  },
+  {
+    "name": "Location Decisions",
+    "href": "/d2l/le/lessons/325173/topics/1266206",
+    "file": "originaler/1266206_Location_Decisions.pdf",
+    "sha256": "8003e3a44a0e9b976bbd7ed157a8bbec0a54e2f2ff623263222cf3c580622489",
+    "bytes": 1267267,
+    "format": ".pdf",
+    "pages": 20,
+    "image_only_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "text_chars": 74777,
+    "ocr_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266206"
+  },
+  {
+    "name": "Transport Modelling - Heizer and Render - Chapter C",
+    "href": "/d2l/le/lessons/325173/topics/1266207",
+    "file": "originaler/1266207_Transport_Modelling_-_Heizer_and_Render_-_Chapter_C.pdf",
+    "sha256": "8fa0d4d088bfec56c412d22b6f7afdaae6d03844fbcb61303fcb5a3602895692",
+    "bytes": 1062934,
+    "format": ".pdf",
+    "pages": 10,
+    "image_only_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "text_chars": 37268,
+    "ocr_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266207"
+  },
+  {
+    "name": "The Wal-Mart Supply Chain - The World is Flat by Thomas Friedman1",
+    "href": "/d2l/le/lessons/325173/topics/1266221",
+    "file": "originaler/1266221_The_Wal-Mart_Supply_Chain_-_The_World_is_Flat_by_Thomas_Friedman1.pdf",
+    "sha256": "66a489fe2912e712fc79cca45d53e56c3bed8a7fa5d8db9be9db56b40514bc32",
+    "bytes": 854726,
+    "format": ".pdf",
+    "pages": 9,
+    "image_only_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "text_chars": 41062,
+    "ocr_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266221"
+  },
+  {
+    "name": "Fisher - What is the right supply chain",
+    "href": "/d2l/le/lessons/325173/topics/1266231",
+    "file": "originaler/1266231_Fisher_-_What_is_the_right_supply_chain.pdf",
+    "sha256": "6c5fc1b0432791a6bf140d5cbb0a8a4444e94a18d7067ead5709a63797fd40ad",
+    "bytes": 3750517,
+    "format": ".pdf",
+    "pages": 13,
+    "image_only_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "text_chars": 45889,
+    "ocr_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266231"
+  },
+  {
+    "name": "Green Supply Chain Management2",
+    "href": "/d2l/le/lessons/325173/topics/1266232",
+    "file": "originaler/1266232_Green_Supply_Chain_Management2.pdf",
+    "sha256": "3228f3fc6a369e81c1913bfb8fdad1bd748a4fccd5702c15015264a72b45b1fa",
+    "bytes": 1065767,
+    "format": ".pdf",
+    "pages": 19,
+    "image_only_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "text_chars": 43855,
+    "ocr_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266232"
+  },
+  {
+    "name": "Revenue streams in reverse supply chains1",
+    "href": "/d2l/le/lessons/325173/topics/1266233",
+    "file": "originaler/1266233_Revenue_streams_in_reverse_supply_chains1.pdf",
+    "sha256": "6ec3a163f975f3ddcb2d2fb1591987e4fef95a6aed6a7699d76f5074049fcb5f",
+    "bytes": 522783,
+    "format": ".pdf",
+    "pages": 24,
+    "image_only_pages": [],
+    "text_chars": 73433,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266233"
+  },
+  {
+    "name": "Reverse supply chain profitability - Literature review1",
+    "href": "/d2l/le/lessons/325173/topics/1266234",
+    "file": "originaler/1266234_Reverse_supply_chain_profitability_-_Literature_review1.pdf",
+    "sha256": "c28240876e5d03802ac9e22bff101bc51a09fc229672f68df051a38a498bfcb4",
+    "bytes": 513144,
+    "format": ".pdf",
+    "pages": 25,
+    "image_only_pages": [],
+    "text_chars": 85377,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266234"
+  },
+  {
+    "name": "Thierry et al. 1995",
+    "href": "/d2l/le/lessons/325173/topics/1266235",
+    "file": "originaler/1266235_Thierry_et_al._1995.pdf",
+    "sha256": "21cf4e12bf69b65e4ac2d5b6b684f6d0cd74323473b73dda8af21596f297b5be",
+    "bytes": 3143786,
+    "format": ".pdf",
+    "pages": 22,
+    "image_only_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "text_chars": 54697,
+    "ocr_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266235"
+  },
+  {
+    "name": "The Wal-Mart Supply Chain - The World is Flat by Thomas Friedman",
+    "href": "/d2l/le/lessons/325173/topics/1266205",
+    "file": "originaler/1266205_The_Wal-Mart_Supply_Chain_-_The_World_is_Flat_by_Thomas_Friedman.pdf",
+    "sha256": "66a489fe2912e712fc79cca45d53e56c3bed8a7fa5d8db9be9db56b40514bc32",
+    "bytes": 854726,
+    "format": ".pdf",
+    "pages": 9,
+    "image_only_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "text_chars": 41062,
+    "ocr_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266205",
+    "duplicate_of": "originaler/1266221_The_Wal-Mart_Supply_Chain_-_The_World_is_Flat_by_Thomas_Friedman1.pdf"
+  },
+  {
+    "name": "Important characteristics and Samuel's Top 5",
+    "href": "/d2l/le/lessons/325173/topics/1266225",
+    "file": "originaler/1266225_Important_characteristics_and_Samuel_s_Top_5.pdf",
+    "sha256": "5b5c9837d64272dd0c104f525790e606959019e51853809550df7144ada50674",
+    "bytes": 104191,
+    "format": ".pdf",
+    "pages": 1,
+    "image_only_pages": [],
+    "text_chars": 1908,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266225"
+  },
+  {
+    "name": "EXERCISE - Supply chain network design decisions - 2023-2028",
+    "href": "/d2l/le/lessons/325173/topics/1266240",
+    "file": "originaler/1266240_EXERCISE_-_Supply_chain_network_design_decisions_-_2023-2028.pptx",
+    "sha256": "5f26dae97b6daf32336de792e5ef83c36406d7c5a1b2cd1083b6157c32a3f1ec",
+    "bytes": 884400,
+    "format": ".pptx",
+    "slides": 5,
+    "text_chars": 2002,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266240"
+  },
+  {
+    "name": "Drivers of supply chain performance - textbook page 56-57",
+    "href": "/d2l/le/lessons/325173/topics/1266208",
+    "file": "originaler/1266208_Drivers_of_supply_chain_performance_-_textbook_page_56-57.pdf",
+    "sha256": "299ec2f79e92860b09f457cf80a3c1bfa8c5a831ecc41ea3d9844179ca8ea6e7",
+    "bytes": 122187,
+    "format": ".pdf",
+    "pages": 1,
+    "image_only_pages": [
+      1
+    ],
+    "text_chars": 9028,
+    "ocr_pages": [
+      1
+    ],
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266208"
+  },
+  {
+    "name": "4xExplanation - Supply chain and strategy - chapter 2 - 7th edition of textbook",
+    "href": "/d2l/le/lessons/325173/topics/1266209",
+    "file": "originaler/1266209_4xExplanation_-_Supply_chain_and_strategy_-_chapter_2_-_7th_edition_of_textbook.docx",
+    "sha256": "fdd5cdb734056edd8d33fb9ba07938be93cc8689544fa563401853ae171f50ce",
+    "bytes": 16654,
+    "format": ".docx",
+    "text_chars": 2747,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266209"
+  },
+  {
+    "name": "4xExplanation - Supply chain and strategy - chapter 2 - 6th edition of textbook",
+    "href": "/d2l/le/lessons/325173/topics/1266210",
+    "file": "originaler/1266210_4xExplanation_-_Supply_chain_and_strategy_-_chapter_2_-_6th_edition_of_textbook.docx",
+    "sha256": "023eed276c66aee252abf41c6e02b29d9ee7064d891e4ac32db90d9a93510ed0",
+    "bytes": 16187,
+    "format": ".docx",
+    "text_chars": 2488,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266210"
+  },
+  {
+    "name": "Strategy - Finance - Supply Chain - ENGLISH",
+    "href": "/d2l/le/lessons/325173/topics/1266222",
+    "file": "originaler/1266222_Strategy_-_Finance_-_Supply_Chain_-_ENGLISH.pptx",
+    "sha256": "0559e1ec06c0564a23923798b4b8fe2f7f4237de5becbf095f7795c8ff8475b1",
+    "bytes": 508885,
+    "format": ".pptx",
+    "slides": 12,
+    "text_chars": 4071,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266222"
+  },
+  {
+    "name": "Textbook 6th edition, page 46-47",
+    "href": "/d2l/le/lessons/325173/topics/1266226",
+    "file": "originaler/1266226_Textbook_6th_edition_page_46-47.pdf",
+    "sha256": "35ee3c421bb3049a2447ba569300e5bf3203981c9bf16d50da9c8383b2eae79d",
+    "bytes": 111825,
+    "format": ".pdf",
+    "pages": 1,
+    "image_only_pages": [
+      1
+    ],
+    "text_chars": 8403,
+    "ocr_pages": [
+      1
+    ],
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266226"
+  },
+  {
+    "name": "Supply Chain Network Design 1 - ENGLISH - v4",
+    "href": "/d2l/le/lessons/325173/topics/1281272",
+    "file": "originaler/1281272_Supply_Chain_Network_Design_1_-_ENGLISH_-_v4.pptx",
+    "sha256": "0c3701b761105a6f08e343ce9e10d04a86c68182af16654f5f67df04ff17babe",
+    "bytes": 3114667,
+    "format": ".pptx",
+    "slides": 25,
+    "text_chars": 3631,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1281272"
+  },
+  {
+    "name": "Location problems (empty template for your work)",
+    "href": "/d2l/le/lessons/325173/topics/1266312",
+    "file": "originaler/1266312_Location_problems_empty_template_for_your_work.xlsx",
+    "sha256": "75a622b3a6e1bb12202dbb1b4dcb4873daf2e0363064c586fb0c6a21009a6dc7",
+    "bytes": 21345,
+    "format": ".xlsx",
+    "sheets": [
+      "Sheet1",
+      "Sheet2",
+      "Sheet3"
+    ],
+    "text_chars": 5816,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266312"
+  },
+  {
+    "name": "Extra Location problems 8A-8C",
+    "href": "/d2l/le/lessons/325173/topics/1266302",
+    "file": "originaler/1266302_Extra_Location_problems_8A-8C.xlsx",
+    "sha256": "ea903f94b765fb49ae45cfcedf8276da52e2e922e4f29069ec62eaaf9fde94a3",
+    "bytes": 18716,
+    "format": ".xlsx",
+    "sheets": [
+      "Ark1",
+      "Ark2",
+      "Ark3"
+    ],
+    "text_chars": 2210,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266302"
+  },
+  {
+    "name": "China map - Location problem",
+    "href": "/d2l/le/lessons/325173/topics/1266303",
+    "file": "originaler/1266303_China_map_-_Location_problem.pdf",
+    "sha256": "fccda61110c76b62d424bbadc64b5c04d0ab5a71ffc6565ceb0205b5a60e73d4",
+    "bytes": 348777,
+    "format": ".pdf",
+    "pages": 1,
+    "image_only_pages": [
+      1
+    ],
+    "text_chars": 932,
+    "ocr_pages": [
+      1
+    ],
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266303"
+  },
+  {
+    "name": "Germany",
+    "href": "/d2l/le/lessons/325173/topics/1266304",
+    "file": "originaler/1266304_Germany.pptx",
+    "sha256": "1faaa01e99cd25c7356379279884f1bf3d44c79fec2d441e793f41d32925eaca",
+    "bytes": 371504,
+    "format": ".pptx",
+    "slides": 1,
+    "text_chars": 10,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266304"
+  },
+  {
+    "name": "Location problems - Solutions - v3",
+    "href": "/d2l/le/lessons/325173/topics/1266305",
+    "file": "originaler/1266305_Location_problems_-_Solutions_-_v3.xlsx",
+    "sha256": "8839c3cfa4b003cc1b58dc43c485530cd911c682e295974dabab2d95c2e116ec",
+    "bytes": 24705,
+    "format": ".xlsx",
+    "sheets": [
+      "Sheet1",
+      "Sheet2",
+      "Sheet3"
+    ],
+    "text_chars": 12445,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266305"
+  },
+  {
+    "name": "Exercise – Distribution Network Design",
+    "href": "/d2l/le/lessons/325173/topics/1279303",
+    "file": "originaler/1279303_Exercise_Distribution_Network_Design.docx",
+    "sha256": "4e04b0d91695416a44478f5d55a6d39222f82fcb7ded10e80596a22fc1cbdbac",
+    "bytes": 15705,
+    "format": ".docx",
+    "text_chars": 2988,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1279303"
+  },
+  {
+    "name": "Exercise - Distribution network design - pages from 7th edition of textbook",
+    "href": "/d2l/le/lessons/325173/topics/1279304",
+    "file": "originaler/1279304_Exercise_-_Distribution_network_design_-_pages_from_7th_edition_of_textbook.pdf",
+    "sha256": "bc1888b5dd81529c62d53af0a453d06caf695ea11524a8c542605553c9cd0b43",
+    "bytes": 1599949,
+    "format": ".pdf",
+    "pages": 8,
+    "image_only_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "text_chars": 53697,
+    "ocr_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1279304"
+  },
+  {
+    "name": "4xExplanation - Supply Chain Network Design - 7th edition of the textbook",
+    "href": "/d2l/le/lessons/325173/topics/1266211",
+    "file": "originaler/1266211_4xExplanation_-_Supply_Chain_Network_Design_-_7th_edition_of_the_textbook.docx",
+    "sha256": "0cd27eb6e0fd98936d522f699dba564fe2c3df6a0eef28b7a2dd51ca2f427cbc",
+    "bytes": 16016,
+    "format": ".docx",
+    "text_chars": 1823,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266211"
+  },
+  {
+    "name": "4xExplanation - Supply Chain Network Design - 6th edition of the textbook",
+    "href": "/d2l/le/lessons/325173/topics/1266212",
+    "file": "originaler/1266212_4xExplanation_-_Supply_Chain_Network_Design_-_6th_edition_of_the_textbook.docx",
+    "sha256": "aa090537c0012b556676e5ac9efa136bce73f8e9ed57ad74dd3b1992b2fd1461",
+    "bytes": 15692,
+    "format": ".docx",
+    "text_chars": 1739,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266212"
+  },
+  {
+    "name": "4xExplanation - Supply Chain Network Design - chapter 4 and 5 - 8th version of textbook",
+    "href": "/d2l/le/lessons/325173/topics/1279330",
+    "file": "originaler/1279330_4xExplanation_-_Supply_Chain_Network_Design_-_chapter_4_and_5_-_8th_version_of_textbook.docx",
+    "sha256": "5d8b982066a31077a78272b9c475910fda77276d9b1573c6453eafded4c5a384",
+    "bytes": 18061,
+    "format": ".docx",
+    "text_chars": 2500,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1279330"
+  },
+  {
+    "name": "Steel Appliances - TEMPLATE",
+    "href": "/d2l/le/lessons/325173/topics/1266251",
+    "file": "originaler/1266251_Steel_Appliances_-_TEMPLATE.xlsx",
+    "sha256": "64367d9b0b85f3dc580b2ab6748833aebf474b72eab2851749b68b60dcafcceb",
+    "bytes": 371553,
+    "format": ".xlsx",
+    "sheets": [
+      "Steel Appliances"
+    ],
+    "text_chars": 1916,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266251"
+  },
+  {
+    "name": "Steel Appliances - SOLUTION",
+    "href": "/d2l/le/lessons/325173/topics/1281267",
+    "file": "originaler/1281267_Steel_Appliances_-_SOLUTION.xlsx",
+    "sha256": "bab77583adf08e5543d943dc8c1df7d968a57b046955944959d654d921e5a9ce",
+    "bytes": 376871,
+    "format": ".xlsx",
+    "sheets": [
+      "Steel Appliances",
+      "SunOil",
+      "DryIce Inc."
+    ],
+    "text_chars": 5864,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1281267"
+  },
+  {
+    "name": "SunOil - TEMPLATE",
+    "href": "/d2l/le/lessons/325173/topics/1266314",
+    "file": "originaler/1266314_SunOil_-_TEMPLATE.xlsx",
+    "sha256": "5f972b4775db793a508e428f5fc4beb186547ba06c0a4931f03533079db48b8c",
+    "bytes": 10397,
+    "format": ".xlsx",
+    "sheets": [
+      "SunOil"
+    ],
+    "text_chars": 1479,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266314"
+  },
+  {
+    "name": "Dry-Ice - TEMPLATE",
+    "href": "/d2l/le/lessons/325173/topics/1266315",
+    "file": "originaler/1266315_Dry-Ice_-_TEMPLATE.xlsx",
+    "sha256": "85c6d6a650b2948beca723233aa3bfd45c18d316c08e7f992a75f9e8f488fb3d",
+    "bytes": 9892,
+    "format": ".xlsx",
+    "sheets": [
+      "Dry-Ice"
+    ],
+    "text_chars": 1053,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266315"
+  },
+  {
+    "name": "SunOil and Dry-Ice - SOLUTIONS",
+    "href": "/d2l/le/lessons/325173/topics/1281268",
+    "file": "originaler/1281268_SunOil_and_Dry-Ice_-_SOLUTIONS.xlsx",
+    "sha256": "72c47accd18755fd5577d9830831fbb07e4d933dfb5091b098dcdf862282b449",
+    "bytes": 377009,
+    "format": ".xlsx",
+    "sheets": [
+      "Steel Appliances",
+      "SunOil",
+      "DryIce Inc."
+    ],
+    "text_chars": 5864,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1281268"
+  },
+  {
+    "name": "4xExplanation - Inventory I - Chapter 11 - Cycle inventory - 7th edition of textbook",
+    "href": "/d2l/le/lessons/325173/topics/1266214",
+    "file": "originaler/1266214_4xExplanation_-_Inventory_I_-_Chapter_11_-_Cycle_inventory_-_7th_edition_of_textbook.docx",
+    "sha256": "3909862e0cecba4a77d4d3453a6c36fb2fb1a591304ed6025a47c281f1ee757a",
+    "bytes": 17294,
+    "format": ".docx",
+    "text_chars": 1960,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266214"
+  },
+  {
+    "name": "4xExplanation - Inventory I - Chapter 11 - Cycle inventory - 6th edition of the textbook",
+    "href": "/d2l/le/lessons/325173/topics/1266215",
+    "file": "originaler/1266215_4xExplanation_-_Inventory_I_-_Chapter_11_-_Cycle_inventory_-_6th_edition_of_the_textbook.docx",
+    "sha256": "4326b45b8477437831b03d260d41313777bf59fb223e3a3526f34ef05271ee8d",
+    "bytes": 17002,
+    "format": ".docx",
+    "text_chars": 1730,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266215"
+  },
+  {
+    "name": "EOQ calculations for production - Assignment",
+    "href": "/d2l/le/lessons/325173/topics/1266252",
+    "file": "originaler/1266252_EOQ_calculations_for_production_-_Assignment.xlsx",
+    "sha256": "0e9edeeb0c604d38acb436e1c5938ef12090b253c4f7c4469d694ffa0eec8527",
+    "bytes": 11985,
+    "format": ".xlsx",
+    "sheets": [
+      "Ark1",
+      "Ark2",
+      "Ark3"
+    ],
+    "text_chars": 1821,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266252"
+  },
+  {
+    "name": "EOQ calculations for production - Solution",
+    "href": "/d2l/le/lessons/325173/topics/1266216",
+    "file": "originaler/1266216_EOQ_calculations_for_production_-_Solution.xlsx",
+    "sha256": "c9d3680669baaa1a4a129409c774d9fbd4772b3bd76c1b6823c97e693ea536f7",
+    "bytes": 13084,
+    "format": ".xlsx",
+    "sheets": [
+      "Ark1",
+      "Ark2",
+      "Ark3"
+    ],
+    "text_chars": 5975,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266216"
+  },
+  {
+    "name": "EOQ calculations for purchasing - Assignment",
+    "href": "/d2l/le/lessons/325173/topics/1266217",
+    "file": "originaler/1266217_EOQ_calculations_for_purchasing_-_Assignment.xlsx",
+    "sha256": "a7712b7648d411a1cf9e36703497831ec2daa1ed1764e3f3e1c24f6e6e77e688",
+    "bytes": 17195,
+    "format": ".xlsx",
+    "sheets": [
+      "Ark1",
+      "Ark2",
+      "Ark3"
+    ],
+    "text_chars": 1201,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266217"
+  },
+  {
+    "name": "EOQ calculations for purchasing - Solution",
+    "href": "/d2l/le/lessons/325173/topics/1266218",
+    "file": "originaler/1266218_EOQ_calculations_for_purchasing_-_Solution.xlsx",
+    "sha256": "b81048ccf97ffe1896fefdb615fe1a2a25d1260054f72fdbe2b04e654822508d",
+    "bytes": 12713,
+    "format": ".xlsx",
+    "sheets": [
+      "Ark1",
+      "Ark2",
+      "Ark3"
+    ],
+    "text_chars": 4852,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266218"
+  },
+  {
+    "name": "Chapter 11 - Problem 22 - Quantity Discounts",
+    "href": "/d2l/le/lessons/325173/topics/1266238",
+    "file": "originaler/1266238_Chapter_11_-_Problem_22_-_Quantity_Discounts.xlsx",
+    "sha256": "03bb2eef193190bc048e96cb55d4f619d24f5b79fe1e7b90ff2b9034778f2836",
+    "bytes": 18656,
+    "format": ".xlsx",
+    "sheets": [
+      "EXAMPLE 11-7",
+      "PROBLEM 22 CRUNCHY"
+    ],
+    "text_chars": 2057,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266238"
+  },
+  {
+    "name": "Cycle Inventory - ENGLISH - v3",
+    "href": "/d2l/le/lessons/325173/topics/1266246",
+    "file": "originaler/1266246_Cycle_Inventory_-_ENGLISH_-_v3.pptx",
+    "sha256": "a54e2b16f853897893d4366a48c2b166b1e5cd500af8bb20ff10adfe42e460df",
+    "bytes": 8344084,
+    "format": ".pptx",
+    "slides": 23,
+    "text_chars": 1558,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266246"
+  },
+  {
+    "name": "4xExplanation - Inventory I - Cycle inventory - Chapter 10 - 8th edition of textbook",
+    "href": "/d2l/le/lessons/325173/topics/1298485",
+    "file": "originaler/1298485_4xExplanation_-_Inventory_I_-_Cycle_inventory_-_Chapter_10_-_8th_edition_of_textbook.docx",
+    "sha256": "dca4aa846e912f807245a775f9dcfcc2a8b96de15f1b1a02f6f5d3bea38ea002",
+    "bytes": 19162,
+    "format": ".docx",
+    "text_chars": 1970,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1298485"
+  },
+  {
+    "name": "4XExplanation - Inventory II - Chapter 12 - Safety Inventory - 7th edition of textbook",
+    "href": "/d2l/le/lessons/325173/topics/1266243",
+    "file": "originaler/1266243_4XExplanation_-_Inventory_II_-_Chapter_12_-_Safety_Inventory_-_7th_edition_of_textbook.docx",
+    "sha256": "31a1aa35185d24dc5bfe28663647148540ff20b3a5a70284d9fd3b1cdfe2d8f4",
+    "bytes": 26058,
+    "format": ".docx",
+    "text_chars": 1598,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266243"
+  },
+  {
+    "name": "4XExplanation - Inventory II - Chapter 12 - Safety Inventory - 6th edition of textbook",
+    "href": "/d2l/le/lessons/325173/topics/1266244",
+    "file": "originaler/1266244_4XExplanation_-_Inventory_II_-_Chapter_12_-_Safety_Inventory_-_6th_edition_of_textbook.docx",
+    "sha256": "4e2a36330bf49f1726eab9cb36f1184763a953e836ff3b8398ba8de21b9762a2",
+    "bytes": 23764,
+    "format": ".docx",
+    "text_chars": 1526,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266244"
+  },
+  {
+    "name": "4XExplanation - Inventory II - Chapter 12 - Safety Inventory - 8th edition of textbook",
+    "href": "/d2l/le/lessons/325173/topics/1303766",
+    "file": "originaler/1303766_4XExplanation_-_Inventory_II_-_Chapter_12_-_Safety_Inventory_-_8th_edition_of_textbook.docx",
+    "sha256": "3b727a8bab9eac1d5a894e71bae9c220656b18fa07b77d1438da736e8f9f16e3",
+    "bytes": 16377,
+    "format": ".docx",
+    "text_chars": 1641,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1303766"
+  },
+  {
+    "name": "Safety Inventory - ENGLISH",
+    "href": "/d2l/le/lessons/325173/topics/1266257",
+    "file": "originaler/1266257_Safety_Inventory_-_ENGLISH.pptx",
+    "sha256": "540bfc793b993632364271bd800c4c29669461d4e5c95ffdbb9854da5d3a5d3d",
+    "bytes": 39376,
+    "format": ".pptx",
+    "slides": 4,
+    "text_chars": 1398,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266257"
+  },
+  {
+    "name": "Chapter 12 - Problem 1 and 2 - Assignments",
+    "href": "/d2l/le/lessons/325173/topics/1266292",
+    "file": "originaler/1266292_Chapter_12_-_Problem_1_and_2_-_Assignments.xlsx",
+    "sha256": "40c5904e337289f76abbe175f1eaa1bf72a26a45a123f260f8bfe209743d5ead",
+    "bytes": 18306,
+    "format": ".xlsx",
+    "sheets": [
+      "Ark1"
+    ],
+    "text_chars": 597,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266292"
+  },
+  {
+    "name": "Chapter 12 - Problem 1 and 2 - Solution",
+    "href": "/d2l/le/lessons/325173/topics/1266293",
+    "file": "originaler/1266293_Chapter_12_-_Problem_1_and_2_-_Solution.xlsx",
+    "sha256": "53d9730bf69858dec610cb1fc8db7b8d302788bd2f9e80e33c0468ddb85e75bc",
+    "bytes": 18869,
+    "format": ".xlsx",
+    "sheets": [
+      "Ark1"
+    ],
+    "text_chars": 1071,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266293"
+  },
+  {
+    "name": "Faulkswagon case - case assignment",
+    "href": "/d2l/le/lessons/325173/topics/1266298",
+    "file": "originaler/1266298_Faulkswagon_case_-_case_assignment.pdf",
+    "sha256": "abe11d5adcc68eb2dc18eabe834ed75d2138a597afe85fc3899b3a50198644ad",
+    "bytes": 878111,
+    "format": ".pdf",
+    "pages": 10,
+    "image_only_pages": [],
+    "text_chars": 20970,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266298"
+  },
+  {
+    "name": "Map with axes and CREP marked",
+    "href": "/d2l/le/lessons/325173/topics/1266259",
+    "file": "originaler/1266259_Map_with_axes_and_CREP_marked.pdf",
+    "sha256": "ebe5740ad1389deba38264dd1663b1d46dbb6f0aa683b96d9825a49632b2051f",
+    "bytes": 886487,
+    "format": ".pdf",
+    "pages": 1,
+    "image_only_pages": [
+      1
+    ],
+    "text_chars": 1110,
+    "ocr_pages": [
+      1
+    ],
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266259"
+  },
+  {
+    "name": "Faulkswagon case - Numbers",
+    "href": "/d2l/le/lessons/325173/topics/1266299",
+    "file": "originaler/1266299_Faulkswagon_case_-_Numbers.xlsx",
+    "sha256": "c29527188bbefa01860d5ee1e3dca0513cba3865c25a60953a42f0b7e02db4d6",
+    "bytes": 25483,
+    "format": ".xlsx",
+    "sheets": [
+      "General numbers",
+      "Factory numbers",
+      "CREPs"
+    ],
+    "text_chars": 12948,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266299"
+  },
+  {
+    "name": "Faulkswagon case - Table for 1.1 + 1.2",
+    "href": "/d2l/le/lessons/325173/topics/1266265",
+    "file": "originaler/1266265_Faulkswagon_case_-_Table_for_1.1_1.2.xlsx",
+    "sha256": "7429e125aea61c5d0a6fbce46d02c756dedbde046dbb61412854b8fbdff74ff2",
+    "bytes": 34488,
+    "format": ".xlsx",
+    "sheets": [
+      "General numbers",
+      "Factory numbers",
+      "CREPs",
+      "1.1",
+      "1.2"
+    ],
+    "text_chars": 16641,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266265"
+  },
+  {
+    "name": "Faulkswagon case - Tables for 1.3 + 1.4 + 1.5",
+    "href": "/d2l/le/lessons/325173/topics/1266264",
+    "file": "originaler/1266264_Faulkswagon_case_-_Tables_for_1.3_1.4_1.5.xlsx",
+    "sha256": "969f8f4b6ab603e1c88ba74846273e3b43cd78b1635433b6aae0974e6a719c6c",
+    "bytes": 52421,
+    "format": ".xlsx",
+    "sheets": [
+      "General numbers",
+      "Factory numbers",
+      "CREPs",
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5"
+    ],
+    "text_chars": 50610,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266264"
+  },
+  {
+    "name": "Faulkswagon case - Tables 1.6 + 1.7 + 1.8 + 1.9 + 1.10",
+    "href": "/d2l/le/lessons/325173/topics/1266263",
+    "file": "originaler/1266263_Faulkswagon_case_-_Tables_1.6_1.7_1.8_1.9_1.10.xlsx",
+    "sha256": "24ebca08846a415e5b0208fd9a289fe64cc8609fdbae8856a267a6b9e95140a3",
+    "bytes": 77314,
+    "format": ".xlsx",
+    "sheets": [
+      "General numbers",
+      "Factory numbers",
+      "CREPs",
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6 + 1.7",
+      "1.8",
+      "1.9",
+      "1.10"
+    ],
+    "text_chars": 73396,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266263"
+  },
+  {
+    "name": "Faulkswagon case - Solution v8",
+    "href": "/d2l/le/lessons/325173/topics/1266266",
+    "file": "originaler/1266266_Faulkswagon_case_-_Solution_v8.xlsx",
+    "sha256": "8d578ffdda7b66b56a28df4169430867f5fc42cd7c550cfda824763cf4951f84",
+    "bytes": 92688,
+    "format": ".xlsx",
+    "sheets": [
+      "General numbers",
+      "Factory numbers",
+      "CREPs",
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6 + 1.7",
+      "1.8",
+      "1.9",
+      "1.10"
+    ],
+    "text_chars": 117646,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266266"
+  },
+  {
+    "name": "Reflections on the Faulkswagon case",
+    "href": "/d2l/le/lessons/325173/topics/1282488",
+    "file": "originaler/1282488_Reflections_on_the_Faulkswagon_case.pptx",
+    "sha256": "0a113cc92b3c298c030582453e11eaaa1ece6b218a6439ab021d34d0038c6d8b",
+    "bytes": 106764,
+    "format": ".pptx",
+    "slides": 1,
+    "text_chars": 550,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1282488"
+  },
+  {
+    "name": "4xExplanation - Chapter 13 - Product availability - 6th edition of textbook",
+    "href": "/d2l/le/lessons/325173/topics/1266267",
+    "file": "originaler/1266267_4xExplanation_-_Chapter_13_-_Product_availability_-_6th_edition_of_textbook.docx",
+    "sha256": "7dfebb00c8ed44ba1c638a5e2d9179cb2d1e2be661b3d43ce58d920b737f2e7e",
+    "bytes": 17458,
+    "format": ".docx",
+    "text_chars": 2189,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266267"
+  },
+  {
+    "name": "4xExplanation - Chapter 13 - Product availability - 7th edition of textbook",
+    "href": "/d2l/le/lessons/325173/topics/1266269",
+    "file": "originaler/1266269_4xExplanation_-_Chapter_13_-_Product_availability_-_7th_edition_of_textbook.docx",
+    "sha256": "0b7fdc052f08b2feebe2955b40c5edf87427246693cd61978bf16fb76e8cb80d",
+    "bytes": 17940,
+    "format": ".docx",
+    "text_chars": 2402,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266269"
+  },
+  {
+    "name": "4xExplanation - Inventory III - Chapter 12 - Product availability - 8th edition of textbook",
+    "href": "/d2l/le/lessons/325173/topics/1304227",
+    "file": "originaler/1304227_4xExplanation_-_Inventory_III_-_Chapter_12_-_Product_availability_-_8th_edition_of_textbook.docx",
+    "sha256": "61357ae52e618caea89f9ee5c0c989ee55584c2e0fc86c2a721b550509f693c4",
+    "bytes": 19964,
+    "format": ".docx",
+    "text_chars": 2366,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1304227"
+  },
+  {
+    "name": "Product Availability - ENGLISH",
+    "href": "/d2l/le/lessons/325173/topics/1266281",
+    "file": "originaler/1266281_Product_Availability_-_ENGLISH.pptx",
+    "sha256": "36a144c583827973f34d5af563545161fa2729af4f857fe823e4b233ac3a8293",
+    "bytes": 4137887,
+    "format": ".pptx",
+    "slides": 10,
+    "text_chars": 1342,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266281"
+  },
+  {
+    "name": "Svar til Product Availability spørgsmål fra sidste semester",
+    "href": "/d2l/le/lessons/325173/topics/1266270",
+    "file": "originaler/1266270_Svar_til_Product_Availability_spørgsmål_fra_sidste_semester.docx",
+    "sha256": "d25ab77bcf4ffee59f51d91d6a1874cd32fa55078ad440490b1ea7b405e754d7",
+    "bytes": 542472,
+    "format": ".docx",
+    "text_chars": 1197,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266270"
+  },
+  {
+    "name": "Chapter 13 - Problem 1 and 10 - CSL and expected profit - Assignment",
+    "href": "/d2l/le/lessons/325173/topics/1266294",
+    "file": "originaler/1266294_Chapter_13_-_Problem_1_and_10_-_CSL_and_expected_profit_-_Assignment.xlsx",
+    "sha256": "b8bb774d29e23957e0fa533eafd6fd89604dbbfe9bc5c45429681b9702b4ac49",
+    "bytes": 15726,
+    "format": ".xlsx",
+    "sheets": [
+      "Sheet1"
+    ],
+    "text_chars": 690,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266294"
+  },
+  {
+    "name": "Chapter 13 - Problem 1 and 10 - CSL and expected profit - Solution",
+    "href": "/d2l/le/lessons/325173/topics/1266295",
+    "file": "originaler/1266295_Chapter_13_-_Problem_1_and_10_-_CSL_and_expected_profit_-_Solution.xlsx",
+    "sha256": "f02740dfceedef50feecbec5dc8cad1aa4d84e4c350669dc8b852049944b395f",
+    "bytes": 16119,
+    "format": ".xlsx",
+    "sheets": [
+      "Sheet1"
+    ],
+    "text_chars": 1600,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266295"
+  },
+  {
+    "name": "4xExplanation - Supply chain coordination - Chapter 10 - 7th edition of the textbook",
+    "href": "/d2l/le/lessons/325173/topics/1266271",
+    "file": "originaler/1266271_4xExplanation_-_Supply_chain_coordination_-_Chapter_10_-_7th_edition_of_the_textbook.docx",
+    "sha256": "a9b7d22b6856c7a34a8848b44c17cca63409b0d638985d5a8d9625f96759bec9",
+    "bytes": 27385,
+    "format": ".docx",
+    "text_chars": 2304,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266271"
+  },
+  {
+    "name": "4xExplanation - Supply chain coordination - Chapter 10 - 6th edition of textbook",
+    "href": "/d2l/le/lessons/325173/topics/1266272",
+    "file": "originaler/1266272_4xExplanation_-_Supply_chain_coordination_-_Chapter_10_-_6th_edition_of_textbook.docx",
+    "sha256": "4fb0da2df8b11c067c9d642c703d1237e480680b140f8054edf08936c0d0d364",
+    "bytes": 29534,
+    "format": ".docx",
+    "text_chars": 2344,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266272"
+  },
+  {
+    "name": "Supply Chain Coordination - ENGLISH",
+    "href": "/d2l/le/lessons/325173/topics/1266282",
+    "file": "originaler/1266282_Supply_Chain_Coordination_-_ENGLISH.pptx",
+    "sha256": "704bdc2977394062f5bed88fdde57b7b1c83d02deb135e8e763666f79ccbe5bb",
+    "bytes": 791263,
+    "format": ".pptx",
+    "slides": 7,
+    "text_chars": 1940,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266282"
+  },
+  {
+    "name": "4xExplanation - Sustainable and circular SCM - for all editions of the textbook",
+    "href": "/d2l/le/lessons/325173/topics/1266278",
+    "file": "originaler/1266278_4xExplanation_-_Sustainable_and_circular_SCM_-_for_all_editions_of_the_textbook.docx",
+    "sha256": "036a24138ff061ff4dcdf025d0d61fa2ad214cf644bf92d6fd1c27f524b098f6",
+    "bytes": 15704,
+    "format": ".docx",
+    "text_chars": 2063,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266278"
+  },
+  {
+    "name": "Circular supply chains v4",
+    "href": "/d2l/le/lessons/325173/topics/1266280",
+    "file": "originaler/1266280_Circular_supply_chains_v4.pdf",
+    "sha256": "0f48c2eb96544124e563dfc059380c8c75ab72b561ca05a21f094f698c9d7e6e",
+    "bytes": 825758,
+    "format": ".pdf",
+    "pages": 24,
+    "image_only_pages": [
+      1,
+      5
+    ],
+    "text_chars": 7469,
+    "ocr_pages": [
+      1,
+      5
+    ],
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266280"
+  },
+  {
+    "name": "Green Supply Chain Management",
+    "href": "/d2l/le/lessons/325173/topics/1266268",
+    "file": "originaler/1266268_Green_Supply_Chain_Management.pdf",
+    "sha256": "3228f3fc6a369e81c1913bfb8fdad1bd748a4fccd5702c15015264a72b45b1fa",
+    "bytes": 1065767,
+    "format": ".pdf",
+    "pages": 19,
+    "image_only_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "text_chars": 43855,
+    "ocr_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266268",
+    "duplicate_of": "originaler/1266232_Green_Supply_Chain_Management2.pdf"
+  },
+  {
+    "name": "Thierry et al. 1995",
+    "href": "/d2l/le/lessons/325173/topics/1266290",
+    "file": "originaler/1266290_Thierry_et_al._1995.pdf",
+    "sha256": "21cf4e12bf69b65e4ac2d5b6b684f6d0cd74323473b73dda8af21596f297b5be",
+    "bytes": 3143786,
+    "format": ".pdf",
+    "pages": 22,
+    "image_only_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "text_chars": 54697,
+    "ocr_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266290",
+    "duplicate_of": "originaler/1266235_Thierry_et_al._1995.pdf"
+  },
+  {
+    "name": "Revenue streams in reverse supply chains",
+    "href": "/d2l/le/lessons/325173/topics/1266288",
+    "file": "originaler/1266288_Revenue_streams_in_reverse_supply_chains.pdf",
+    "sha256": "6ec3a163f975f3ddcb2d2fb1591987e4fef95a6aed6a7699d76f5074049fcb5f",
+    "bytes": 522783,
+    "format": ".pdf",
+    "pages": 24,
+    "image_only_pages": [],
+    "text_chars": 73433,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266288",
+    "duplicate_of": "originaler/1266233_Revenue_streams_in_reverse_supply_chains1.pdf"
+  },
+  {
+    "name": "Reverse supply chain profitability - Literature review",
+    "href": "/d2l/le/lessons/325173/topics/1266289",
+    "file": "originaler/1266289_Reverse_supply_chain_profitability_-_Literature_review.pdf",
+    "sha256": "c28240876e5d03802ac9e22bff101bc51a09fc229672f68df051a38a498bfcb4",
+    "bytes": 513144,
+    "format": ".pdf",
+    "pages": 25,
+    "image_only_pages": [],
+    "text_chars": 85377,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266289",
+    "duplicate_of": "originaler/1266234_Reverse_supply_chain_profitability_-_Literature_review1.pdf"
+  },
+  {
+    "name": "Extended version of slides",
+    "href": "/d2l/le/lessons/325173/topics/1266300",
+    "file": "originaler/1266300_Extended_version_of_slides.pdf",
+    "sha256": "66255be29be6526fa488978345dd6b4a319d0899fa35380dedd18ba6774d36fc",
+    "bytes": 1220857,
+    "format": ".pdf",
+    "pages": 35,
+    "image_only_pages": [
+      27
+    ],
+    "text_chars": 10789,
+    "ocr_pages": [
+      27
+    ],
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266300"
+  },
+  {
+    "name": "4xExplanation - Transportation - Chapter 14 - 7th edition of the textbook",
+    "href": "/d2l/le/lessons/325173/topics/1266273",
+    "file": "originaler/1266273_4xExplanation_-_Transportation_-_Chapter_14_-_7th_edition_of_the_textbook.docx",
+    "sha256": "29fd387deada226c0d405995cd7dc8b2eaf5558b6273e82c34c32dc6126998df",
+    "bytes": 17385,
+    "format": ".docx",
+    "text_chars": 1865,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266273"
+  },
+  {
+    "name": "4xExplanation - Transportation - Chapter 14 - 6th edition of the textbook",
+    "href": "/d2l/le/lessons/325173/topics/1266274",
+    "file": "originaler/1266274_4xExplanation_-_Transportation_-_Chapter_14_-_6th_edition_of_the_textbook.docx",
+    "sha256": "99ece8bbe6bc7389889968122a048ed21c707aba50174f7a089b1e8791417bdc",
+    "bytes": 17230,
+    "format": ".docx",
+    "text_chars": 1923,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266274"
+  },
+  {
+    "name": "Transport modelling problems - Exercises",
+    "href": "/d2l/le/lessons/325173/topics/1266275",
+    "file": "originaler/1266275_Transport_modelling_problems_-_Exercises.xlsx",
+    "sha256": "8e70d53a4d9d24bcf548f3b17b32ee49fac6e2193d092157b76556c7524b39de",
+    "bytes": 20367,
+    "format": ".xlsx",
+    "sheets": [
+      "Ark1",
+      "Ark2",
+      "Ark3"
+    ],
+    "text_chars": 4549,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266275"
+  },
+  {
+    "name": "Transport modelling problems - Solutions1",
+    "href": "/d2l/le/lessons/325173/topics/1266296",
+    "file": "originaler/1266296_Transport_modelling_problems_-_Solutions1.xlsx",
+    "sha256": "b584b252534b47d7834196345a76026f951c610d6e3453c4cc717ce3e31a2ce1",
+    "bytes": 20814,
+    "format": ".xlsx",
+    "sheets": [
+      "Ark1",
+      "Ark2",
+      "Ark3"
+    ],
+    "text_chars": 5589,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266296"
+  },
+  {
+    "name": "Transport Modelling - Heizer and Render - Chapter C1",
+    "href": "/d2l/le/lessons/325173/topics/1266277",
+    "file": "originaler/1266277_Transport_Modelling_-_Heizer_and_Render_-_Chapter_C1.pdf",
+    "sha256": "8fa0d4d088bfec56c412d22b6f7afdaae6d03844fbcb61303fcb5a3602895692",
+    "bytes": 1062934,
+    "format": ".pdf",
+    "pages": 10,
+    "image_only_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "text_chars": 37268,
+    "ocr_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266277",
+    "duplicate_of": "originaler/1266207_Transport_Modelling_-_Heizer_and_Render_-_Chapter_C.pdf"
+  },
+  {
+    "name": "Transportation v3",
+    "href": "/d2l/le/lessons/325173/topics/1266283",
+    "file": "originaler/1266283_Transportation_v3.pptx",
+    "sha256": "bd368cfdcfab7ef1c093b16dd30be93254e6f206986147ae651c6cd6a93622ed",
+    "bytes": 613165,
+    "format": ".pptx",
+    "slides": 13,
+    "text_chars": 2070,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1266283"
+  },
+  {
+    "name": "Remanufacturing_Introduction",
+    "href": "/d2l/le/lessons/325173/topics/1289497",
+    "file": "originaler/1289497_Remanufacturing_Introduction.pdf",
+    "sha256": "355e01fc7b27e9d879fa8308a85bf25e74bbf7d1f4cb614c01ebf25f3ae23d2d",
+    "bytes": 184565,
+    "format": ".pdf",
+    "pages": 3,
+    "image_only_pages": [],
+    "text_chars": 6457,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1289497"
+  },
+  {
+    "name": "Workshop_Introduction",
+    "href": "/d2l/le/lessons/325173/topics/1289498",
+    "file": "originaler/1289498_Workshop_Introduction.pdf",
+    "sha256": "72112b0533258fdb2046ba4195c5fa91dee53e380f1d7ba9b303b718a89d186a",
+    "bytes": 352806,
+    "format": ".pdf",
+    "pages": 5,
+    "image_only_pages": [],
+    "text_chars": 3385,
+    "source_url": "https://learn.inside.dtu.dk/d2l/le/lessons/325173/topics/1289498"
+  }
+]

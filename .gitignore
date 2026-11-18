@@ -43,3 +43,6 @@ next-env.d.ts
 # large source materials (kept locally, content distilled into src/data)
 /uploads/
 /assets/
+# heavy binary course dumps stay local; curated text overviews live in content/kursus
+/content/kursus/originaler/
+/content/kursus/tekst/

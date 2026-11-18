@@ -7,10 +7,12 @@ import {
   ListChecks,
   BookMarked,
   GitBranch,
+  ClipboardList,
 } from "lucide-react";
 
 const links = [
   { href: "/", label: "Oversigt", icon: BookOpen },
+  { href: "/eksamen", label: "Eksamen", icon: ClipboardList },
   { href: "/ordbog", label: "Ordbog", icon: BookMarked },
   { href: "/sammenhaeng", label: "Sammenhæng", icon: GitBranch },
   { href: "/test", label: "Test", icon: ListChecks },

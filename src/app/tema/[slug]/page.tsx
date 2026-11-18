@@ -8,6 +8,7 @@ import { ThemeQuiz } from "@/components/exam/theme-quiz";
 import { ThemePrimer } from "@/components/exam/theme-primer";
 import { ThemeTheoryPanel } from "@/components/exam/theme-theory";
 import { ThemeMaterialsPanel } from "@/components/exam/theme-materials";
+import { FourXPanel } from "@/components/exam/four-x-panel";
 import { Flashcards } from "@/components/exam/flashcards";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -69,6 +70,7 @@ export default async function ThemePage({
 
       <div className="no-print space-y-6">
         <ThemeMaterialsPanel themeId={theme.id} />
+        <FourXPanel themeId={theme.id} />
         <ThemePrimer themeId={theme.id} />
         <ThemeTheoryPanel themeId={theme.id} />
         <Flashcards themeId={theme.id} />

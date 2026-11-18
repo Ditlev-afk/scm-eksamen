@@ -117,11 +117,20 @@ export const themes: Theme[] = [
     ],
     talkTrack: [
       {
+        heading: "Customer priorities → fit",
+        bullets: [
+          "Slack & Lewis: Quality, Speed, Dependability, Flexibility, Cost.",
+          "En virksomhed konkurrerer typisk på få prioriteter — ofte lav pris ELLER en kombination af de øvrige.",
+          "I bogen: Efficiency vs Responsiveness som de to brede kategorier.",
+        ],
+      },
+      {
         heading: "Fig. 3-1 Decision framework",
         bullets: [
           "Competitive strategy → SC strategy (hvor på E↔R) → SC structure.",
           "Seks drivers designes til at matche strategien.",
           "Metrics på hver driver måler performance og kobler tilbage til finansielle mål (fx ROA).",
+          "NB: Framework-siderne 56–57 findes i 6. udgave / upload på Learn — ikke i 7. udgave.",
         ],
       },
       {
