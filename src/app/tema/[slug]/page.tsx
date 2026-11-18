@@ -6,10 +6,10 @@ import { PracticeQuiz } from "@/components/exam/practice-quiz";
 import { PresentationTimer } from "@/components/exam/presentation-timer";
 import { ThemeQuiz } from "@/components/exam/theme-quiz";
 import { ThemePrimer } from "@/components/exam/theme-primer";
-import { ThemeTheoryPanel } from "@/components/exam/theme-theory";
 import { ThemeMaterialsPanel } from "@/components/exam/theme-materials";
 import { ThemeReadingsPanel } from "@/components/exam/theme-readings";
 import { ThemeDiagramsPanel } from "@/components/exam/scm-diagrams";
+import { FormulaStrip } from "@/components/exam/formula-strip";
 import { Flashcards } from "@/components/exam/flashcards";
 import { FourXPanel } from "@/components/exam/four-x-panel";
 import { getSourcesForTheme } from "@/data/study/source-map";
@@ -41,13 +41,9 @@ export default async function ThemePage({
           <h1 className="font-display mt-2 text-3xl text-[hsl(var(--ink))] sm:text-4xl">
             {theme.title}
           </h1>
-          <p className="mt-2 max-w-3xl text-sm text-muted-foreground">
-            Pensumteksten står åben herunder. Timer, materialeguide og 5-min-struktur
-            ligger nederst under Eksamensværktøjer.
-          </p>
           {sources.length ? (
-            <p className="mt-1 max-w-3xl text-xs text-muted-foreground">
-              Kilder: {sources.join(" · ")}
+            <p className="mt-2 max-w-3xl text-sm text-muted-foreground">
+              {sources.join(" · ")}
             </p>
           ) : null}
         </div>
@@ -65,16 +61,22 @@ export default async function ThemePage({
         </div>
       </div>
 
-      <div id="laesestof" className="no-print">
-        <ThemeReadingsPanel themeId={theme.id} />
+      {/* 1. Structure first: agenda cheat sheet */}
+      <A4Sheet theme={theme} />
+
+      {/* 2. Formulas visible — never buried in markdown dumps */}
+      <div className="no-print">
+        <FormulaStrip theme={theme} />
       </div>
 
+      {/* 3. Visual models */}
       <div className="no-print">
         <ThemeDiagramsPanel themeId={theme.id} />
       </div>
 
-      <div className="no-print">
-        <ThemeTheoryPanel themeId={theme.id} />
+      {/* 4. Short notes + pensumkort */}
+      <div id="laesestof" className="no-print">
+        <ThemeReadingsPanel themeId={theme.id} />
       </div>
 
       <div className="no-print">
@@ -84,8 +86,6 @@ export default async function ThemePage({
       <div className="no-print">
         <Flashcards themeId={theme.id} />
       </div>
-
-      <A4Sheet theme={theme} />
 
       <section className="no-print space-y-3">
         <h2 className="font-display text-2xl text-[hsl(var(--ink))]">
@@ -119,7 +119,7 @@ export default async function ThemePage({
 
       <div className="no-print flex flex-wrap gap-2">
         <Button asChild variant="outline" size="sm">
-          <Link href="/laes">Alle tekster</Link>
+          <Link href="/laes">Alle temaer</Link>
         </Button>
         <Button asChild variant="outline" size="sm">
           <Link href="/ordbog">Ordbog</Link>
@@ -131,7 +131,7 @@ export default async function ThemePage({
 
       <details className="no-print rounded-xl border border-dashed border-border bg-muted/20 p-5">
         <summary className="cursor-pointer font-display text-xl text-[hsl(var(--ink))]">
-          Eksamensværktøjer (timer, materialeguide, 5-min-struktur)
+          Eksamensværktøjer (timer, materialeguide)
         </summary>
         <div className="mt-5 space-y-6">
           <div className="grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">

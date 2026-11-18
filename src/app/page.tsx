@@ -30,8 +30,8 @@ export default function HomePage() {
             12 temaer. Pensumteksten står på siden.
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg">
-            Dine noter, Chopra-bogen og slides/øvelser ligger inde på hvert tema —
-            klar til at læse, ikke kun som vejledning.
+            Hvert tema: A4-agenda, synlige formler, korte eksamenskort og modeller —
+            bygget til mundtlig eksamen, ikke en bogdump.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Button asChild size="lg" className="bg-[hsl(var(--coral))] hover:bg-[hsl(16_72%_42%)]">

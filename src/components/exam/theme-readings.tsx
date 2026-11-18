@@ -4,30 +4,26 @@ import { useState } from "react";
 import { getReadingsForTheme, type Reading } from "@/data/study/readings";
 import { MarkdownBody } from "@/components/exam/markdown-body";
 
-/** Kinds that are actual course content — open by default. */
-const CONTENT_KINDS = new Set([
-  "teori",
-  "noter",
-  "bog",
-  "kildeuddrag",
-  "slides",
-  "løsning",
-  "4xExplanation",
-  "4x-svar",
-  "øvelse",
-  "eksempel",
-  "case-indhold",
-]);
+/** Open by default — the exam study path. */
+const OPEN_KINDS = new Set(["noter", "bog"]);
 
-/** Meta/exam tips — demote and keep closed. */
-const DEMOTE_KINDS = new Set(["guide", "regler", "case"]);
-
-function isContentKind(kind: string) {
-  return CONTENT_KINDS.has(kind);
-}
-
-function isDemotedKind(kind: string) {
-  return DEMOTE_KINDS.has(kind);
+/** Everything else stays collapsed until needed. */
+function rank(kind: string) {
+  const order = [
+    "noter",
+    "bog",
+    "4x-svar",
+    "4xExplanation",
+    "løsning",
+    "øvelse",
+    "eksempel",
+    "case-indhold",
+    "kildeuddrag",
+    "slides",
+    "teori",
+  ];
+  const i = order.indexOf(kind);
+  return i === -1 ? 50 : i;
 }
 
 function ReadingCard({
@@ -55,7 +51,7 @@ function ReadingCard({
           <p className="mt-1 text-xs text-muted-foreground">{reading.source}</p>
         </div>
         <span className="shrink-0 text-sm text-muted-foreground">
-          {open ? "Luk" : "Læs"}
+          {open ? "Luk" : "Åbn"}
         </span>
       </button>
       {open ? (
@@ -68,62 +64,40 @@ function ReadingCard({
 }
 
 export function ThemeReadingsPanel({ themeId }: { themeId: number }) {
-  const items = getReadingsForTheme(themeId);
+  const items = [...getReadingsForTheme(themeId)].sort(
+    (a, b) => rank(a.kind) - rank(b.kind) || a.title.localeCompare(b.title)
+  );
   if (!items.length) return null;
 
-  const primary = items.filter((r) => !isDemotedKind(r.kind));
-  const secondary = items.filter((r) => isDemotedKind(r.kind));
-
-  // Prefer bog/noter/kildeuddrag first, then 4x, then rest
-  const rank = (kind: string) => {
-    const order = [
-      "noter",
-      "bog",
-      "teori",
-      "kildeuddrag",
-      "slides",
-      "4x-svar",
-      "4xExplanation",
-      "løsning",
-      "øvelse",
-      "eksempel",
-      "case-indhold",
-    ];
-    const i = order.indexOf(kind);
-    return i === -1 ? 50 : i;
-  };
-  primary.sort((a, b) => rank(a.kind) - rank(b.kind) || a.title.localeCompare(b.title));
+  const core = items.filter((r) => OPEN_KINDS.has(r.kind));
+  const extra = items.filter((r) => !OPEN_KINDS.has(r.kind));
 
   return (
     <section className="space-y-4">
       <div>
         <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[hsl(var(--coral))]">
-          Pensumtekst
+          Læsestof
         </p>
         <h2 className="font-display mt-1 text-2xl text-[hsl(var(--ink))]">
-          Læs teorien her
+          Eksamenskort + pensumkort
         </h2>
         <p className="mt-1 text-sm text-muted-foreground">
-          {primary.length} tekster med kursusindhold — åbne som standard. Noter,
-          boguddrag, slides, 4x-svar og kildeuddrag står direkte på siden.
+          To korte tekster åbne: dine noter i eksamensstruktur, derefter
+          pensumkortet. Øvelser, 4x og kildeuddrag ligger lukket under.
         </p>
       </div>
       <div className="space-y-3">
-        {primary.map((r) => (
-          <ReadingCard
-            key={r.id}
-            reading={r}
-            defaultOpen={isContentKind(r.kind) || !isDemotedKind(r.kind)}
-          />
+        {core.map((r) => (
+          <ReadingCard key={r.id} reading={r} defaultOpen />
         ))}
       </div>
-      {secondary.length ? (
-        <details className="rounded-xl border border-dashed border-border bg-muted/30 p-4">
-          <summary className="cursor-pointer text-sm font-medium text-muted-foreground">
-            Eksamensregler / tips ({secondary.length}) — skjult som standard
+      {extra.length ? (
+        <details className="rounded-xl border border-dashed border-border bg-muted/25 p-4">
+          <summary className="cursor-pointer text-sm font-medium text-foreground/80">
+            Mere materiale ({extra.length}) — 4x, øvelser, kildeuddrag
           </summary>
           <div className="mt-3 space-y-3">
-            {secondary.map((r) => (
+            {extra.map((r) => (
               <ReadingCard key={r.id} reading={r} defaultOpen={false} />
             ))}
           </div>
