@@ -3,40 +3,30 @@
 import { useState } from "react";
 import { getReadingsForTheme, type Reading } from "@/data/study/readings";
 
-const PRIMARY_KINDS = new Set([
+/** Kinds that are actual course content — open by default. */
+const CONTENT_KINDS = new Set([
+  "teori",
   "noter",
   "bog",
-  "teori",
   "kildeuddrag",
   "slides",
   "løsning",
-  "øvelse",
   "4xExplanation",
   "4x-svar",
+  "øvelse",
   "eksempel",
   "case-indhold",
 ]);
 
-const ORDER = [
-  "noter",
-  "bog",
-  "kildeuddrag",
-  "slides",
-  "4x-svar",
-  "4xExplanation",
-  "øvelse",
-  "løsning",
-  "eksempel",
-  "case-indhold",
-  "teori",
-];
+/** Meta/exam tips — demote and keep closed. */
+const DEMOTE_KINDS = new Set(["guide", "regler", "case"]);
 
-function sortReadings(items: Reading[]) {
-  return [...items].sort((a, b) => {
-    const ai = ORDER.indexOf(a.kind);
-    const bi = ORDER.indexOf(b.kind);
-    return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
-  });
+function isContentKind(kind: string) {
+  return CONTENT_KINDS.has(kind);
+}
+
+function isDemotedKind(kind: string) {
+  return DEMOTE_KINDS.has(kind);
 }
 
 function ReadingCard({
@@ -64,12 +54,12 @@ function ReadingCard({
           <p className="mt-1 text-xs text-muted-foreground">{reading.source}</p>
         </div>
         <span className="shrink-0 text-sm text-muted-foreground">
-          {open ? "Luk" : "Åbn"}
+          {open ? "Luk" : "Læs"}
         </span>
       </button>
       {open ? (
-        <div className="border-t border-border px-4 py-5 sm:px-6">
-          <div className="max-w-none whitespace-pre-wrap text-[15px] leading-7 text-foreground/90">
+        <div className="border-t border-border px-4 py-4">
+          <div className="prose-reading max-w-none whitespace-pre-wrap text-sm leading-relaxed text-foreground/90">
             {reading.body}
           </div>
         </div>
@@ -79,30 +69,67 @@ function ReadingCard({
 }
 
 export function ThemeReadingsPanel({ themeId }: { themeId: number }) {
-  const items = sortReadings(
-    getReadingsForTheme(themeId).filter((r) => PRIMARY_KINDS.has(r.kind))
-  );
+  const items = getReadingsForTheme(themeId);
   if (!items.length) return null;
+
+  const primary = items.filter((r) => !isDemotedKind(r.kind));
+  const secondary = items.filter((r) => isDemotedKind(r.kind));
+
+  // Prefer bog/noter/kildeuddrag first, then 4x, then rest
+  const rank = (kind: string) => {
+    const order = [
+      "noter",
+      "bog",
+      "teori",
+      "kildeuddrag",
+      "slides",
+      "4x-svar",
+      "4xExplanation",
+      "løsning",
+      "øvelse",
+      "eksempel",
+      "case-indhold",
+    ];
+    const i = order.indexOf(kind);
+    return i === -1 ? 50 : i;
+  };
+  primary.sort((a, b) => rank(a.kind) - rank(b.kind) || a.title.localeCompare(b.title));
 
   return (
     <section className="space-y-4">
       <div>
         <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[hsl(var(--coral))]">
-          Pensum på siden
+          Pensumtekst
         </p>
         <h2 className="font-display mt-1 text-2xl text-[hsl(var(--ink))]">
-          Noter, bog og kildetekster
+          Læs teorien her
         </h2>
         <p className="mt-1 text-sm text-muted-foreground">
-          Først dine noter, derefter Chopra/pensum, derefter slides, 4x-svar og
-          kildeuddrag. Teksterne er åbne — scroll og læs.
+          {primary.length} tekster med kursusindhold — åbne som standard. Noter,
+          boguddrag, slides, 4x-svar og kildeuddrag står direkte på siden.
         </p>
       </div>
       <div className="space-y-3">
-        {items.map((r, i) => (
-          <ReadingCard key={r.id} reading={r} defaultOpen={i < 4} />
+        {primary.map((r) => (
+          <ReadingCard
+            key={r.id}
+            reading={r}
+            defaultOpen={isContentKind(r.kind) || !isDemotedKind(r.kind)}
+          />
         ))}
       </div>
+      {secondary.length ? (
+        <details className="rounded-xl border border-dashed border-border bg-muted/30 p-4">
+          <summary className="cursor-pointer text-sm font-medium text-muted-foreground">
+            Eksamensregler / tips ({secondary.length}) — skjult som standard
+          </summary>
+          <div className="mt-3 space-y-3">
+            {secondary.map((r) => (
+              <ReadingCard key={r.id} reading={r} defaultOpen={false} />
+            ))}
+          </div>
+        </details>
+      ) : null}
     </section>
   );
 }
