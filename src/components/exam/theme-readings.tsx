@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { getReadingsForTheme, type Reading } from "@/data/study/readings";
+import { MarkdownBody } from "@/components/exam/markdown-body";
 
 /** Kinds that are actual course content — open by default. */
 const CONTENT_KINDS = new Set([
@@ -58,10 +59,8 @@ function ReadingCard({
         </span>
       </button>
       {open ? (
-        <div className="border-t border-border px-4 py-4">
-          <div className="prose-reading max-w-none whitespace-pre-wrap text-sm leading-relaxed text-foreground/90">
-            {reading.body}
-          </div>
+        <div className="border-t border-border px-4 py-5 sm:px-5">
+          <MarkdownBody>{reading.body}</MarkdownBody>
         </div>
       ) : null}
     </article>

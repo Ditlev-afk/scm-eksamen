@@ -49,6 +49,104 @@
   }
 }
 
+@layer components {
+  /* Readable study text — headings bold & larger than body */
+  .prose-reading {
+    @apply max-w-none text-base leading-7 text-foreground/90 sm:text-lg sm:leading-8;
+  }
+
+  .prose-reading > :first-child {
+    @apply mt-0;
+  }
+
+  .prose-reading > :last-child {
+    @apply mb-0;
+  }
+
+  .prose-reading h1 {
+    @apply font-display mt-8 mb-3 text-2xl font-bold tracking-tight text-[hsl(var(--ink))] sm:text-3xl;
+  }
+
+  .prose-reading h2 {
+    @apply font-display mt-7 mb-2.5 text-xl font-bold tracking-tight text-[hsl(var(--ink))] sm:text-2xl;
+  }
+
+  .prose-reading h3 {
+    @apply font-display mt-6 mb-2 text-lg font-bold text-[hsl(var(--ink))] sm:text-xl;
+  }
+
+  .prose-reading h4 {
+    @apply mt-5 mb-1.5 text-base font-bold text-[hsl(var(--ink))] sm:text-lg;
+  }
+
+  .prose-reading p {
+    @apply my-3;
+  }
+
+  .prose-reading ul {
+    @apply my-3 list-disc space-y-1.5 pl-6;
+  }
+
+  .prose-reading ol {
+    @apply my-3 list-decimal space-y-1.5 pl-6;
+  }
+
+  .prose-reading li {
+    @apply pl-0.5;
+  }
+
+  .prose-reading li > ul,
+  .prose-reading li > ol {
+    @apply my-1.5;
+  }
+
+  .prose-reading strong {
+    @apply font-bold text-[hsl(var(--ink))];
+  }
+
+  .prose-reading em {
+    @apply italic;
+  }
+
+  .prose-reading a {
+    @apply font-medium text-[hsl(var(--sea))] underline underline-offset-2;
+  }
+
+  .prose-reading blockquote {
+    @apply my-4 border-l-4 pl-4 italic;
+    border-color: hsl(var(--sea) / 0.45);
+    color: hsl(var(--ink) / 0.85);
+  }
+
+  .prose-reading hr {
+    @apply my-6 border-border;
+  }
+
+  .prose-reading code {
+    @apply rounded bg-secondary/80 px-1.5 py-0.5 font-mono text-[0.9em] text-[hsl(var(--ink))];
+  }
+
+  .prose-reading pre {
+    @apply my-4 overflow-x-auto rounded-lg border border-border bg-secondary/50 p-3 text-sm leading-6;
+  }
+
+  .prose-reading pre code {
+    @apply bg-transparent p-0;
+  }
+
+  .prose-reading table {
+    @apply my-4 w-full border-collapse text-left text-[0.95em];
+  }
+
+  .prose-reading th {
+    @apply border-b-2 border-border px-2 py-2 font-bold text-[hsl(var(--ink))];
+  }
+
+  .prose-reading td {
+    @apply border-b border-border/70 px-2 py-2 align-top;
+  }
+}
+
 @layer utilities {
   .font-display {
     font-family: var(--font-display), Georgia, serif;

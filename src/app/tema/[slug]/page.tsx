@@ -9,6 +9,7 @@ import { ThemePrimer } from "@/components/exam/theme-primer";
 import { ThemeTheoryPanel } from "@/components/exam/theme-theory";
 import { ThemeMaterialsPanel } from "@/components/exam/theme-materials";
 import { ThemeReadingsPanel } from "@/components/exam/theme-readings";
+import { ThemeDiagramsPanel } from "@/components/exam/scm-diagrams";
 import { Flashcards } from "@/components/exam/flashcards";
 import { FourXPanel } from "@/components/exam/four-x-panel";
 import { getSourcesForTheme } from "@/data/study/source-map";
@@ -66,6 +67,10 @@ export default async function ThemePage({
 
       <div id="laesestof" className="no-print">
         <ThemeReadingsPanel themeId={theme.id} />
+      </div>
+
+      <div className="no-print">
+        <ThemeDiagramsPanel themeId={theme.id} />
       </div>
 
       <div className="no-print">

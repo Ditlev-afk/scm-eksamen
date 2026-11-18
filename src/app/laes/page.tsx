@@ -3,6 +3,7 @@ import { readings } from "@/data/study/readings";
 import { themes } from "@/data/themes";
 import { getSourcesForTheme } from "@/data/study/source-map";
 import { Badge } from "@/components/ui/badge";
+import { MarkdownBody } from "@/components/exam/markdown-body";
 
 const SHOW = new Set([
   "noter",
@@ -64,8 +65,8 @@ export default function LaesPage() {
                   {r.title}
                 </h3>
                 <p className="mt-1 text-xs text-muted-foreground">{r.source}</p>
-                <div className="mt-4 whitespace-pre-wrap text-[15px] leading-7 text-foreground/90">
-                  {r.body}
+                <div className="mt-4">
+                  <MarkdownBody>{r.body}</MarkdownBody>
                 </div>
               </article>
             ))}
