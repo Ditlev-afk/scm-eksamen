@@ -27,11 +27,11 @@ export default function HomePage() {
             {courseMeta.code} · {courseMeta.term} · Mundtlig eksamen
           </p>
           <h1 className="font-display mt-3 text-4xl leading-[1.05] tracking-tight sm:text-5xl">
-            12 temaer. Ét A4-ark. Fem minutter ved tavlen.
+            12 temaer. Pensumteksten står på siden.
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg">
-            Læsestof fra dit DTU Learn-materiale, 4xExplanation, A4-ark, tests og
-            workshop-guide — så du kan læse og øve dig direkte her.
+            Dine noter, Chopra-bogen og slides/øvelser ligger inde på hvert tema —
+            klar til at læse, ikke kun som vejledning.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Button asChild size="lg" className="bg-[hsl(var(--coral))] hover:bg-[hsl(16_72%_42%)]">
@@ -114,12 +114,12 @@ export default function HomePage() {
 
       <section>
         <div className="mb-4">
-          <h2 className="font-display text-2xl text-[hsl(var(--ink))]">
-            De 12 temaer
-          </h2>
-          <p className="text-sm text-muted-foreground">
-            Åbn et tema for A4-ark, formler og øvespørgsmål.
-          </p>
+            <h2 className="font-display text-2xl text-[hsl(var(--ink))]">
+              De 12 temaer
+            </h2>
+            <p className="text-sm text-muted-foreground">
+              Åbn et tema for at læse pensumteksten, formler og modelbesvarelser.
+            </p>
         </div>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {themes.map((theme) => (

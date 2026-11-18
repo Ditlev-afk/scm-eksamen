@@ -3,14 +3,11 @@ import { notFound } from "next/navigation";
 import { getTheme, themes } from "@/data/themes";
 import { A4Sheet } from "@/components/exam/a4-sheet";
 import { PracticeQuiz } from "@/components/exam/practice-quiz";
-import { PresentationTimer } from "@/components/exam/presentation-timer";
 import { ThemeQuiz } from "@/components/exam/theme-quiz";
-import { ThemePrimer } from "@/components/exam/theme-primer";
-import { ThemeTheoryPanel } from "@/components/exam/theme-theory";
-import { ThemeMaterialsPanel } from "@/components/exam/theme-materials";
-import { FourXPanel } from "@/components/exam/four-x-panel";
 import { ThemeReadingsPanel } from "@/components/exam/theme-readings";
 import { Flashcards } from "@/components/exam/flashcards";
+import { FourXPanel } from "@/components/exam/four-x-panel";
+import { getSourcesForTheme } from "@/data/study/source-map";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -29,6 +26,7 @@ export default async function ThemePage({
 
   const prev = themes.find((t) => t.id === theme.id - 1);
   const next = themes.find((t) => t.id === theme.id + 1);
+  const sources = getSourcesForTheme(theme.id);
 
   return (
     <div className="space-y-8">
@@ -36,8 +34,13 @@ export default async function ThemePage({
         <div>
           <Badge variant="secondary">Tema {theme.id} af 12</Badge>
           <h1 className="font-display mt-2 text-3xl text-[hsl(var(--ink))] sm:text-4xl">
-            {theme.shortTitle}
+            {theme.title}
           </h1>
+          {sources.length ? (
+            <p className="mt-2 max-w-3xl text-sm text-muted-foreground">
+              Kilder til temaet: {sources.join(" · ")}
+            </p>
+          ) : null}
         </div>
         <div className="flex flex-wrap gap-2">
           {prev ? (
@@ -53,45 +56,16 @@ export default async function ThemePage({
         </div>
       </div>
 
-      <div className="no-print grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
-        <PresentationTimer />
-        <div className="rounded-xl border border-border bg-card p-5 shadow-sm">
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[hsl(var(--sea))]">
-            Broer til andre temaer
-          </p>
-          <ul className="mt-3 space-y-2">
-            {theme.crossLinks.map((c) => (
-              <li key={c} className="text-sm leading-snug text-foreground/85">
-                · {c}
-              </li>
-            ))}
-          </ul>
-        </div>
+      <div id="laesestof" className="no-print">
+        <ThemeReadingsPanel themeId={theme.id} />
       </div>
 
-      <div className="no-print space-y-6">
-        <div id="laesestof">
-          <ThemeReadingsPanel themeId={theme.id} />
-        </div>
-        <ThemeMaterialsPanel themeId={theme.id} />
+      <div className="no-print">
         <FourXPanel themeId={theme.id} />
-        <ThemePrimer themeId={theme.id} />
-        <ThemeTheoryPanel themeId={theme.id} />
+      </div>
+
+      <div className="no-print">
         <Flashcards themeId={theme.id} />
-        <div className="flex flex-wrap gap-2">
-          <Button asChild variant="outline" size="sm">
-            <Link href="/laes">Hele læsebiblioteket</Link>
-          </Button>
-          <Button asChild variant="outline" size="sm">
-            <Link href="/ordbog">Åbn ordbog</Link>
-          </Button>
-          <Button asChild variant="outline" size="sm">
-            <Link href="/sammenhaeng">Se sammenhænge</Link>
-          </Button>
-          <Button asChild variant="outline" size="sm">
-            <Link href={`/test/${theme.slug}`}>Test temaet</Link>
-          </Button>
-        </div>
       </div>
 
       <A4Sheet theme={theme} />
@@ -105,12 +79,8 @@ export default async function ThemePage({
 
       <section className="no-print space-y-3">
         <h2 className="font-display text-2xl text-[hsl(var(--ink))]">
-          Hurtig dialogtræning
+          Dialogtræning
         </h2>
-        <p className="text-sm text-muted-foreground">
-          Første spørgsmål er inden for temaet. Et par er bevidst fra andre temaer
-          — som til den rigtige eksamen.
-        </p>
         <PracticeQuiz themeId={theme.id} />
       </section>
 
@@ -121,7 +91,7 @@ export default async function ThemePage({
         <div className="mt-4 space-y-4">
           {theme.examAnswers.map((qa) => (
             <div key={qa.q}>
-              <p className="font-semibold text-sm">{qa.q}</p>
+              <p className="text-sm font-semibold">{qa.q}</p>
               <p className="mt-1 text-sm leading-relaxed text-foreground/80">
                 {qa.a}
               </p>
@@ -129,6 +99,18 @@ export default async function ThemePage({
           ))}
         </div>
       </section>
+
+      <div className="no-print flex flex-wrap gap-2">
+        <Button asChild variant="outline" size="sm">
+          <Link href="/laes">Alle tekster</Link>
+        </Button>
+        <Button asChild variant="outline" size="sm">
+          <Link href="/ordbog">Ordbog</Link>
+        </Button>
+        <Button asChild variant="outline" size="sm">
+          <Link href={`/test/${theme.slug}`}>Fuld test</Link>
+        </Button>
+      </div>
     </div>
   );
 }

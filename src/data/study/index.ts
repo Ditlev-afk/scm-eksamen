@@ -7,5 +7,7 @@ export { curriculumStory, connections, getConnectionsForTheme } from "./connecti
 export { materialsByTheme, getMaterials, courseMeta } from "./materials";
 export { examOverview } from "./exam-overview";
 export { fourXBlocks, getFourXForTheme } from "./four-x";
+export { fourXAnswers, getFourXAnswersForTheme } from "./four-x-answers";
 export { readings, getReadingsForTheme, getGeneralReadings, getReading, readingStats } from "./readings";
 export type { Reading } from "./readings";
+export { getSourcesForTheme } from "./source-map";
