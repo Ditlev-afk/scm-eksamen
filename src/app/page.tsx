@@ -30,11 +30,19 @@ export default function HomePage() {
             12 temaer. Ét A4-ark. Fem minutter ved tavlen.
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg">
-            Bygget efter underviserens vejledning: kapitler, 4xExplanation,
-            Faulkswagen A3 og workshop-spor — plus ordbog, teori og tests.
+            Læsestof fra dit DTU Learn-materiale, 4xExplanation, A4-ark, tests og
+            workshop-guide — så du kan læse og øve dig direkte her.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Button asChild size="lg" className="bg-[hsl(var(--coral))] hover:bg-[hsl(16_72%_42%)]">
+              <Link href="/laes">Læs pensum</Link>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white"
+            >
               <Link href="/eksamen">Eksamensoverblik</Link>
             </Button>
             <Button

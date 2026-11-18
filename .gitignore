@@ -46,3 +46,4 @@ next-env.d.ts
 # heavy binary course dumps stay local; curated text overviews live in content/kursus
 /content/kursus/originaler/
 /content/kursus/tekst/
+/content/extracted/

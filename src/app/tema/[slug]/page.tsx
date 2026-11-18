@@ -9,6 +9,7 @@ import { ThemePrimer } from "@/components/exam/theme-primer";
 import { ThemeTheoryPanel } from "@/components/exam/theme-theory";
 import { ThemeMaterialsPanel } from "@/components/exam/theme-materials";
 import { FourXPanel } from "@/components/exam/four-x-panel";
+import { ThemeReadingsPanel } from "@/components/exam/theme-readings";
 import { Flashcards } from "@/components/exam/flashcards";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -69,12 +70,18 @@ export default async function ThemePage({
       </div>
 
       <div className="no-print space-y-6">
+        <div id="laesestof">
+          <ThemeReadingsPanel themeId={theme.id} />
+        </div>
         <ThemeMaterialsPanel themeId={theme.id} />
         <FourXPanel themeId={theme.id} />
         <ThemePrimer themeId={theme.id} />
         <ThemeTheoryPanel themeId={theme.id} />
         <Flashcards themeId={theme.id} />
         <div className="flex flex-wrap gap-2">
+          <Button asChild variant="outline" size="sm">
+            <Link href="/laes">Hele læsebiblioteket</Link>
+          </Button>
           <Button asChild variant="outline" size="sm">
             <Link href="/ordbog">Åbn ordbog</Link>
           </Button>
