@@ -42,8 +42,22 @@ export const examOverview = {
     "Faulkswagen som gennemgående eksempel (placering, kapacitet, transport, lager, service)",
     "Walmart: nyttigt eksempel i præsentationer, ikke direkte eksamenspensum ifølge intro",
   ],
+  themes: [
+    { id: 1, title: "Strategic fit (supply chain and strategy)" },
+    { id: 2, title: "Supply chain drivers and metrics" },
+    { id: 3, title: "Distribution network design" },
+    { id: 4, title: "Network design" },
+    { id: 5, title: "Location decisions" },
+    { id: 6, title: "Inventory management I – cycle inventory" },
+    { id: 7, title: "Inventory management I – safety inventory" },
+    { id: 8, title: "Inventory management II – product availability" },
+    { id: 9, title: "Transportation and transport modelling" },
+    { id: 10, title: "Supply chain coordination" },
+    { id: 11, title: "Sustainability and circular supply chains" },
+    { id: 12, title: "Remanufacturing" },
+  ],
   theme12Note:
-    "Eksamens-Excel’et lister Faulkswagon som tema 12. Underviserens tema-liste/billede og workshop-vejledning behandler Remanufacturing som trækkeligt tema. Forbered begge: Faulkswagen A3 + remanufacturing-workshop.",
+    "Tema 12 er Remanufacturing. Faulkswagen er en tværgående case (medbring A3) — ikke et trækkeligt tema.",
   oralDrills: [
     {
       theme: "Strategic fit",

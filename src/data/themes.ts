@@ -964,7 +964,7 @@ export const themes: Theme[] = [
 ];
 
 export const faulkswagonCase = {
-  title: "Faulkswagen-casen (tværgående — medbring A3)",
+  title: "Faulkswagen-casen (tværgående — ikke tema 12)",
   agenda: [
     "1. Case-setup: factories → DWs → CREPs",
     "2. Servicekrav 24h/48h",

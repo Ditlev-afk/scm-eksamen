@@ -170,8 +170,9 @@ export default function HomePage() {
           {faulkswagonCase.title}
         </h2>
         <p className="mt-2 max-w-2xl text-sm text-foreground/80">
-          Tag dit eget A3-kort med. Casen bruges især under location, network
-          design og transportation — og i dialogen på tværs af temaerne.
+          Ikke et trækkeligt tema (tema 12 er Remanufacturing). Tag dit eget
+          A3-kort med — casen bruges under location, network design,
+          transportation og i dialogen på tværs.
         </p>
         <ul className="mt-4 grid gap-2 sm:grid-cols-2">
           {faulkswagonCase.agenda.map((a) => (

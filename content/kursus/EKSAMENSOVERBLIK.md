@@ -27,7 +27,7 @@ Eksemplerne nedenfor følger underviserens forslag. De er mulige vinkler, ikke e
 | 9 | Transportation and transport modelling | Direct shipping kontra milk runs; stepping-stone-metoden; TL og LTL med Faulkswagon som eksempel. |
 | 10 | Supply chain coordination | Informationsdeling og bullwhip; VMI og CRP. |
 | 11 | Sustainability and circular supply chains | Revenue streams i reverse supply chains; cradle-to-cradle; CopyMagic; reverse logistics og de syv “deadly sins”. |
-| 12 | Faulkswagon | Fabriksplacering via center-of-gravity; valg af DW; transport kontra produktionsomkostninger; forbedringer af udgangspunktet i ark 1.10. |
+| 12 | Remanufacturing | Definition; kobling til circular SC; egen workshop (produkt, track, handling, læring). Faulkswagen er tværgående case — ikke tema 12. |
 
 ## Forslag til arbejdsform
 

@@ -39,17 +39,26 @@ export default function ExamOverviewPage() {
         </div>
       </section>
 
-      <section className="rounded-xl border border-[hsl(var(--coral)/0.35)] bg-[hsl(16_60%_97%)] p-5">
-        <h2 className="font-display text-xl text-[hsl(var(--ink))]">Tema 12 — pas på listen</h2>
-        <p className="mt-2 text-sm leading-relaxed text-foreground/85">
-          {examOverview.theme12Note}
-        </p>
+      <section className="rounded-xl border border-border bg-card p-5">
+        <h2 className="font-display text-xl text-[hsl(var(--ink))]">De 12 temaer</h2>
+        <p className="mt-2 text-sm text-muted-foreground">{examOverview.theme12Note}</p>
+        <ol className="mt-4 grid gap-2 sm:grid-cols-2">
+          {examOverview.themes.map((t) => (
+            <li
+              key={t.id}
+              className="rounded-md border border-border/70 bg-[hsl(var(--sand))]/30 px-3 py-2 text-sm"
+            >
+              <span className="font-semibold text-[hsl(var(--sea))]">{t.id}.</span>{" "}
+              {t.title}
+            </li>
+          ))}
+        </ol>
         <div className="mt-4 flex flex-wrap gap-2">
-          <Button asChild size="sm" variant="outline">
-            <Link href="/tema/remanufacturing">Remanufacturing</Link>
+          <Button asChild size="sm">
+            <Link href="/tema/remanufacturing">Åbn tema 12 · Remanufacturing</Link>
           </Button>
           <Button asChild size="sm" variant="outline">
-            <Link href="/tema/faulkswagon">Faulkswagen A3</Link>
+            <Link href="/tema/faulkswagon">Faulkswagen A3 (tværgående)</Link>
           </Button>
         </div>
       </section>

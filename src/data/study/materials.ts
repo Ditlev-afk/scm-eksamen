@@ -19,7 +19,7 @@ export const courseMeta = {
     "Du trækker ét tema uden færdigspørgsmål — du vælger selv 5-minutters vinkel.",
     "Derefter spørgsmål til din præsentation, resten af temaet, og andre dele af curriculum.",
     "A4-skabelon: agenda → problem → figur/model → lille eksempel → afvejning → antagelser.",
-    "Bemærk: Excel-arket har Faulkswagon som tema 12; underviserens liste/billede har Remanufacturing — forbered begge.",
+    "Tema 12 er Remanufacturing. Faulkswagen er tværgående case — tag A3-kortet med, men det er ikke tema 12.",
   ],
 };
 
